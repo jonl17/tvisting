@@ -12,4 +12,21 @@ collections:
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Lýsing", name: "lysing", widget: "" }
+      - { label: "Lýsing", name: "lysing", widget: "text" }
+      - label: "Hvað var gert?"
+        name: "hvad-var-gert"
+        widget: "select"
+        multiple: true
+        options: ["Vefun", "Grafísk Hönnun", "Textagerð"]
+      - { label: "Kúnni", name: "kunni", widget: "string" }
+      - label: "Myndir & Myndbönd"
+        name: "myndir-og-myndbond"
+        widget: "list"
+        fields:
+          - { label: "Mynd", name: "mynd", widget: "image", required: false }
+          - {
+              label: "Myndband",
+              name: "myndband",
+              widget: "file",
+              required: false,
+            }
