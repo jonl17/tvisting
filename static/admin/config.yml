@@ -19,6 +19,7 @@ collections:
         multiple: true
         options: ["Vefun", "Grafísk Hönnun", "Textagerð"]
       - { label: "Kúnni", name: "kunni", widget: "string" }
+      - { label: "Forsíðu mynd", name: "forsidu-mynd", widget: "image" }
       - label: "Myndir & Myndbönd"
         name: "myndir-og-myndbond"
         widget: "list"
