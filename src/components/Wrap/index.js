@@ -20,7 +20,7 @@ class Wrap extends React.Component {
     dispatch(setDevice(window.innerWidth))
   }
   render() {
-    return <Container>{this.props.device}</Container>
+    return <Container>{this.props.children}</Container>
   }
 }
 

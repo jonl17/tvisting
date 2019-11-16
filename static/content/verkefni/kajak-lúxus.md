@@ -18,4 +18,3 @@ myndir-og-myndbond:
   - myndband: /assets/Kajak_AUG_.mp4
   - mynd: /assets/dagblad_mock_.jpg
 ---
-

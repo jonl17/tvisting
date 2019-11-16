@@ -23,12 +23,20 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: ["gatsby-remark-relative-images", "gatsby-remark-images"],
+        plugins: [
+          "gatsby-remark-relative-images",
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1080,
+            },
+          },
+        ],
       },
     },
     `gatsby-plugin-styled-components`,
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-netlify-cms`,
   ],
 }
