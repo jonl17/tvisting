@@ -12,9 +12,11 @@ hvad-var-gert:
   - Vefun
   - Textagerð
 kunni: Síminn
+forsidu-mynd: /assets/KajakLuxus_Cover_new_.jpg
 myndir-og-myndbond:
   - mynd: /assets/Kajakogluxus.jpg
     myndband: ''
   - mynd: /assets/dagblad_mock_.jpg
   - myndband: /assets/Kajak_SIMI_1_.mp4
 ---
+
