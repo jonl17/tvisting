@@ -3,10 +3,10 @@ import { graphql } from "gatsby"
 import ManyProjects from "../components/ManyProjects"
 import { VerticalTitle } from "../constants/components"
 
-const Verkin = ({ data, location }) => {
+const Verkin = ({ data }) => {
   return (
     <>
-      <VerticalTitle title={location.pathname.replace("/", "")}></VerticalTitle>
+      <VerticalTitle title={"Verkin"}></VerticalTitle>
       <ManyProjects projects={data.allMarkdownRemark.nodes}></ManyProjects>
     </>
   )
