@@ -6,8 +6,6 @@
 
 module.exports = {
   plugins: [
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -36,6 +34,8 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-netlify-cms`,
   ],
