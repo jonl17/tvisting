@@ -14,7 +14,7 @@ hvad-var-gert:
 kunni: Síminn
 myndir-og-myndbond:
   - mynd: /assets/Kajakogluxus.jpg
-  - myndband: /assets/Kajak_SIMI_1_.mp4
-  - myndband: /assets/Kajak_AUG_.mp4
+    myndband: ''
   - mynd: /assets/dagblad_mock_.jpg
+  - myndband: /assets/Kajak_SIMI_1_.mp4
 ---
