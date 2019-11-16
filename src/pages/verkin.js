@@ -1,9 +1,15 @@
 import React from "react"
 import { graphql } from "gatsby"
 import ManyProjects from "../components/ManyProjects"
+import { VerticalTitle } from "../constants/components"
 
-const Verkin = ({ data }) => {
-  return <ManyProjects projects={data.allMarkdownRemark.nodes}></ManyProjects>
+const Verkin = ({ data, location }) => {
+  return (
+    <>
+      <VerticalTitle title={location.pathname.replace("/", "")}></VerticalTitle>
+      <ManyProjects projects={data.allMarkdownRemark.nodes}></ManyProjects>
+    </>
+  )
 }
 
 export const query = graphql`

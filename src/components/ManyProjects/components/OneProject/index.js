@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, ImageContainer, Image } from "./Styled"
+import { Container, ImageContainer, Image, Info, List, Item } from "./Styled"
 import { graphql, StaticQuery } from "gatsby"
 
 const FetchSharpImage = name => (
@@ -33,8 +33,14 @@ const OneProject = ({ project }) => {
   return (
     <Container>
       <ImageContainer>
-        {FetchSharpImage(project.forsidu_mynd.replace("../../assets/", ""))}
+        {FetchSharpImage(project.forsidu_mynd.replace("/assets/", ""))}
       </ImageContainer>
+      <Info>
+        <List>
+          <Item>{project.kunni}</Item>
+          <Item>{project.title}</Item>
+        </List>
+      </Info>
     </Container>
   )
 }

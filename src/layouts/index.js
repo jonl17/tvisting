@@ -1,7 +1,9 @@
 import React from "react"
 import { Container } from "./Styled"
 import { connect } from "react-redux"
-import { setDevice } from "../../state/action"
+import { setDevice } from "../state/action"
+import Footer from "../components/Footer"
+import { PageContainer } from "../constants/components"
 
 class Wrap extends React.Component {
   constructor(props) {
@@ -20,7 +22,12 @@ class Wrap extends React.Component {
     dispatch(setDevice(window.innerWidth))
   }
   render() {
-    return <Container>{this.props.children}</Container>
+    return (
+      <Container>
+        <PageContainer>{this.props.children}</PageContainer>
+        <Footer></Footer>
+      </Container>
+    )
   }
 }
 

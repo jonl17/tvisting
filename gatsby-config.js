@@ -5,6 +5,17 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: `TVIST auglýsingastofa`,
+    address: {
+      address: `Þórunnartún 2`,
+      code: `105 Reykjavík`,
+    },
+    contact: {
+      mail: `tvist@tvist.is`,
+      phone: `855 7701`,
+    },
+  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -34,9 +45,18 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: `${__dirname}/static/assets`,
+        },
+      },
+    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-layout`,
   ],
 }
