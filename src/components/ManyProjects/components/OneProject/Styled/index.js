@@ -50,3 +50,16 @@ export const Item = styled.li`
   color: white;
   margin: 0;
 `
+
+export const VideoContainer = styled.div`
+  padding: 0 !important;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+`
+export const Video = styled.video`
+  height: 100%;
+  width: 100%;
+`

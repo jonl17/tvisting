@@ -25,6 +25,7 @@ export const query = graphql`
             mynd
           }
           forsidu_mynd
+          forsidu_myndband
         }
       }
     }
