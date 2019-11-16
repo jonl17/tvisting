@@ -4,6 +4,9 @@ import { Link } from "gatsby"
 
 export const Container = styled.div`
   position: relative;
+  padding-top: 57.25%;
+  width: 100%;
+  height: 0;
 `
 export const ImageContainer = styled.div`
   width: 100%;
@@ -19,7 +22,7 @@ export const Info = styled(Link)`
   transition: 0.3s;
   background: rgba(16, 16, 16, 0.3);
   top: 0;
-  padding-top: 57.25%;
+  padding-top: 56.25%;
   width: 100%;
   opacity: 0;
   &&:hover {
