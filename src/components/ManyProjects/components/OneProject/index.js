@@ -18,8 +18,14 @@ const FetchSharpImage = name => (
       {
         allImageSharp {
           nodes {
-            fluid {
-              ...GatsbyImageSharpFluid
+            fluid(
+              traceSVG: {
+                color: "#E65064"
+                turnPolicy: TURNPOLICY_MINORITY
+                blackOnWhite: false
+              }
+            ) {
+              ...GatsbyImageSharpFluid_tracedSVG
               originalName
             }
           }
