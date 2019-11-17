@@ -10,7 +10,8 @@ lysing: >-
 hvad-var-gert:
   - Grafísk Hönnun
 kunni: Krónan
-forsidu-mynd: /assets/Feature_Kronan.gif
-forsidu-myndband: /assets/Feature_Kronan.gif
+forsidu-mynd: ''
+forsidu-myndband: ''
+forsidu-gif: /assets/Feature_Kronan.gif
 ---
 
