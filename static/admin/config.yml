@@ -19,10 +19,21 @@ collections:
         multiple: true
         options: ["Vefun", "Grafísk Hönnun", "Textagerð"]
       - { label: "Kúnni", name: "kunni", widget: "string" }
-      - { label: "Forsíðu mynd", name: "forsidu-mynd", widget: "image" }
+      - {
+          label: "Forsíðu mynd",
+          name: "forsidu-mynd",
+          widget: "image",
+          required: false,
+        }
       - {
           label: "Forsíðu myndband",
           name: "forsidu-myndband",
+          widget: "file",
+          required: false,
+        }
+       - {
+          label: "Forsíðu gif",
+          name: "forsidu-gif",
           widget: "file",
           required: false,
         }

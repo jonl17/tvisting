@@ -39,27 +39,37 @@ const FetchSharpImage = name => (
 
 const OneProject = ({ project }) => {
   console.log(project)
-  return (
-    <Container>
-      {project.forsidu_myndband !== null ? (
+  if (project.forsidu_myndband !== null) {
+    return (
+      <Container>
         <VideoContainer>
           <Video autoPlay muted loop>
             <source type="video/mp4" src={project.forsidu_myndband}></source>
           </Video>
         </VideoContainer>
-      ) : (
+        <Info>
+          <List>
+            <Item>{project.kunni}</Item>
+            <Item>{project.title}</Item>
+          </List>
+        </Info>
+      </Container>
+    )
+  } else {
+    return (
+      <Container>
         <ImageContainer>
           {FetchSharpImage(project.forsidu_mynd.replace("/assets/", ""))}
         </ImageContainer>
-      )}
-      <Info>
-        <List>
-          <Item>{project.kunni}</Item>
-          <Item>{project.title}</Item>
-        </List>
-      </Info>
-    </Container>
-  )
+        <Info>
+          <List>
+            <Item>{project.kunni}</Item>
+            <Item>{project.title}</Item>
+          </List>
+        </Info>
+      </Container>
+    )
+  }
 }
 
 export default OneProject
