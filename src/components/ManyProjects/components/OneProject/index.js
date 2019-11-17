@@ -46,7 +46,6 @@ const FetchSharpImage = name => (
 )
 
 const OneProject = ({ project }) => {
-  console.log(project)
   if (project.forsidu_myndband !== null && project.forsidu_myndband !== "") {
     // it's video
     return (

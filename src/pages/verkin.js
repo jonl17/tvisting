@@ -9,7 +9,11 @@ const Verkin = ({ data, device }) => {
   return (
     <PageContainer>
       <VerticalTitle device={device} title={"Verkin"}></VerticalTitle>
-      <ManyProjects projects={data.allMarkdownRemark.nodes}></ManyProjects>
+      {device !== undefined ? (
+        <ManyProjects projects={data.allMarkdownRemark.nodes}></ManyProjects>
+      ) : (
+        <></>
+      )}
     </PageContainer>
   )
 }
