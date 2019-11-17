@@ -1,12 +1,5 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import React from "react"
-
-export const PageContainer = styled.div`
-  height: 100%;
-  box-sizing: border-box;
-  padding: 75px;
-  min-height: 100vh;
-`
 
 const VerticalText = styled.h1`
   position: fixed;
@@ -22,6 +15,13 @@ const VerticalText = styled.h1`
   text-transform: uppercase;
   transform-origin: 0 0;
   transform: rotate(-90deg);
+  ${props =>
+    props.device === `mobile` &&
+    css`
+      display: none;
+    `}
 `
 
-export const VerticalTitle = ({ title }) => <VerticalText>{title}</VerticalText>
+export const VerticalTitle = ({ title, device }) => (
+  <VerticalText device={device}>{title}</VerticalText>
+)

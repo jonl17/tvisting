@@ -1,8 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
+import PageContainer from "../components/PageContainer"
 
 const index = () => {
-  return <Link to={"/verkin"}>verkin</Link>
+  return (
+    <PageContainer>
+      <Link to={"/verkin"}>verkin</Link>
+    </PageContainer>
+  )
 }
 
 export default index

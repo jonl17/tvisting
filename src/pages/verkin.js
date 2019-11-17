@@ -2,13 +2,15 @@ import React from "react"
 import { graphql } from "gatsby"
 import ManyProjects from "../components/ManyProjects"
 import { VerticalTitle } from "../constants/components"
+import PageContainer from "../components/PageContainer"
+import { connect } from "react-redux"
 
-const Verkin = ({ data }) => {
+const Verkin = ({ data, device }) => {
   return (
-    <>
-      <VerticalTitle title={"Verkin"}></VerticalTitle>
+    <PageContainer>
+      <VerticalTitle device={device} title={"Verkin"}></VerticalTitle>
       <ManyProjects projects={data.allMarkdownRemark.nodes}></ManyProjects>
-    </>
+    </PageContainer>
   )
 }
 
@@ -32,4 +34,8 @@ export const query = graphql`
   }
 `
 
-export default Verkin
+const mapStateToProps = state => ({
+  device: state.reducer.device,
+})
+
+export default connect(mapStateToProps)(Verkin)
