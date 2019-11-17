@@ -8,6 +8,7 @@ import {
   Item,
   VideoContainer,
   Video,
+  Gif,
 } from "./Styled"
 import { graphql, StaticQuery } from "gatsby"
 
@@ -39,7 +40,8 @@ const FetchSharpImage = name => (
 
 const OneProject = ({ project }) => {
   console.log(project)
-  if (project.forsidu_myndband !== null) {
+  if (project.forsidu_myndband !== null && project.forsidu_myndband !== "") {
+    // it's video
     return (
       <Container>
         <VideoContainer>
@@ -55,11 +57,12 @@ const OneProject = ({ project }) => {
         </Info>
       </Container>
     )
-  } else if (project.forsidu_gif !== null) {
+  } else if (project.forsidu_gif !== null && project.forsidu_gif !== "") {
+    // it's a gif
     return (
       <Container>
         <ImageContainer>
-          <img src={project.forsidu_gif}></img>
+          <Gif src={project.forsidu_gif}></Gif>
         </ImageContainer>
         <Info>
           <List>
@@ -70,6 +73,7 @@ const OneProject = ({ project }) => {
       </Container>
     )
   } else {
+    // it's an image
     return (
       <Container>
         <ImageContainer>

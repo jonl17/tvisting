@@ -28,6 +28,7 @@ export const query = graphql`
           }
           forsidu_mynd
           forsidu_myndband
+          forsidu_gif
         }
       }
     }

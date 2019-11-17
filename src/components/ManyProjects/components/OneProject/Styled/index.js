@@ -62,4 +62,8 @@ export const VideoContainer = styled.div`
 export const Video = styled.video`
   height: 100%;
   width: 100%;
+  object-fit: cover;
+`
+export const Gif = styled.img`
+  width: 100%;
 `
