@@ -28,10 +28,9 @@ collections:
       - label: "Forsíðu myndband"
         name: "forsidu-myndband"
         widget: "list"
-        required: false
         fields:
-          - { label: ".webm", name: "webm", widget: file, required: false }
-          - { label: ".mp4", name: "mp4", widget: file, required: false }
+          - { label: "webm", name: "webm", widget: file, required: false }
+          - { label: "mp4", name: "mp4", widget: file, required: false }
       - {
           label: "Forsíðu gif",
           name: "forsidu-gif",

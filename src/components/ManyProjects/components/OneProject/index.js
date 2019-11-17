@@ -19,6 +19,7 @@ const FetchSharpImage = name => (
         allImageSharp {
           nodes {
             fluid(
+              maxWidth: 600
               traceSVG: {
                 color: "#E65064"
                 turnPolicy: TURNPOLICY_MINORITY
