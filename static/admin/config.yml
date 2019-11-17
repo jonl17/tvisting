@@ -31,7 +31,7 @@ collections:
           widget: "file",
           required: false,
         }
-       - {
+      - {
           label: "Forsíðu gif",
           name: "forsidu-gif",
           widget: "file",

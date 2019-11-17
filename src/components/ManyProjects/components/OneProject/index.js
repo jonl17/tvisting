@@ -55,6 +55,20 @@ const OneProject = ({ project }) => {
         </Info>
       </Container>
     )
+  } else if (project.forsidu_gif !== null) {
+    return (
+      <Container>
+        <ImageContainer>
+          <img src={project.forsidu_gif}></img>
+        </ImageContainer>
+        <Info>
+          <List>
+            <Item>{project.kunni}</Item>
+            <Item>{project.title}</Item>
+          </List>
+        </Info>
+      </Container>
+    )
   } else {
     return (
       <Container>
