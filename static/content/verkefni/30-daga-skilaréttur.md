@@ -9,7 +9,11 @@ lysing: >-
   kjörlendi þess í attenborísku ljósi.
 hvad-var-gert:
   - Grafísk Hönnun
+  - Hugmyndavinna
+  - Textavinna
+  - Tökur
 kunni: Elko
 forsidu-mynd: /assets/Elko_mynd1.jpg
+efsta-mynd: /assets/Elko_mynd1.jpg
 ---
 
