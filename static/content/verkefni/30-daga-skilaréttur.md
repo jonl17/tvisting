@@ -13,7 +13,13 @@ hvad-var-gert:
   - Textavinna
   - Tökur
 kunni: Elko
-forsidu-mynd: /assets/Elko_mynd1.jpg
+forsidu-mynd: /assets/Elko_Featured-copy.jpg
 efsta-mynd: /assets/Elko_mynd1.jpg
+myndir-og-myndbond:
+  - mynd: /assets/Elko_mynd2.jpg
+  - myndband: /assets/Elko_sjonvarp_11s.mp4
+  - myndband: /assets/Elko_isskapur_20s.mp4
+  - mynd: /assets/Elko_mynd3.jpg
+  - mynd: /assets/Elko_mynd4.jpg
 ---
 
