@@ -9,6 +9,8 @@ collections:
   - name: "verkefni"
     label: "Verkefni"
     folder: "static/content/verkefni"
+    editor:
+      preview: false
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
@@ -17,7 +19,20 @@ collections:
         name: "hvad-var-gert"
         widget: "select"
         multiple: true
-        options: ["Vefun", "Grafísk Hönnun", "Textagerð"]
+        options:
+          [
+            "Vefun",
+            "Grafísk Hönnun",
+            "Hugmyndavinna",
+            "Mörkun",
+            "Framleiðsla",
+            "Hönnun",
+            "Textavinna",
+            "Samfélagsmiðlun",
+            "Stefnumótun",
+            "Letur",
+            "Tökur",
+          ]
       - { label: "Kúnni", name: "kunni", widget: "string" }
       - {
           label: "Forsíðu mynd",
@@ -41,6 +56,12 @@ collections:
         name: "myndir-og-myndbond"
         widget: "list"
         fields:
+          - {
+              label: "Efsta Mynd",
+              name: "efsta-mynd",
+              widget: "image",
+              hint: "Þessi mynd birtist efst í stöku verki",
+            }
           - { label: "Mynd", name: "mynd", widget: "image", required: false }
           - {
               label: "Myndband",

@@ -1,10 +1,14 @@
 import React from "react"
+import { useSelector } from "react-redux"
+
 import { Container } from "./Styled"
+
+/** components */
 import Logo from "./components/Logo"
 import Contact from "./components/Contact"
-import { connect } from "react-redux"
 
-const Footer = ({ device }) => {
+const Footer = () => {
+  const device = useSelector(state => state.reducer.device)
   return (
     <Container device={device}>
       <Logo></Logo>
@@ -14,8 +18,4 @@ const Footer = ({ device }) => {
   )
 }
 
-const mapStateToProps = state => ({
-  device: state.reducer.device,
-})
-
-export default connect(mapStateToProps)(Footer)
+export default Footer

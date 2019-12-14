@@ -1,9 +1,10 @@
 import React from "react"
 import { Container } from "./Styled"
 import OneProject from "./components/OneProject"
-import { connect } from "react-redux"
+import { useSelector } from "react-redux"
 
-const Manyprojects = ({ projects, device }) => {
+const Projects = ({ projects }) => {
+  const device = useSelector(state => state.reducer.device)
   return (
     <Container device={device}>
       {projects.map((project, index) => (
@@ -13,8 +14,4 @@ const Manyprojects = ({ projects, device }) => {
   )
 }
 
-const mapStateToProps = state => ({
-  device: state.reducer.device,
-})
-
-export default connect(mapStateToProps)(Manyprojects)
+export default Projects

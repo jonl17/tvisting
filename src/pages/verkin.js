@@ -1,16 +1,25 @@
 import React from "react"
 import { graphql } from "gatsby"
-import ManyProjects from "../components/ManyProjects"
-import { VerticalTitle } from "../constants/components"
-import PageContainer from "../components/PageContainer"
-import { connect } from "react-redux"
+import { useSelector } from "react-redux"
 
-const Verkin = ({ data, device }) => {
+/** components */
+import PageContainer from "../components/PageContainer"
+import Projects from "../components/Projects"
+import { VerticalTitle } from "../constants/components"
+
+const Verkin = ({
+  data: {
+    allMarkdownRemark: { nodes: verkin },
+  },
+}) => {
+  const device = useSelector(state => state.reducer.device)
   return (
     <PageContainer>
-      <VerticalTitle device={device} title={"Verkin"}></VerticalTitle>
       {device !== undefined ? (
-        <ManyProjects projects={data.allMarkdownRemark.nodes}></ManyProjects>
+        <>
+          <VerticalTitle device={device} title={"Verkin"}></VerticalTitle>
+          <Projects projects={verkin}></Projects>
+        </>
       ) : (
         <></>
       )}
@@ -39,8 +48,4 @@ export const query = graphql`
   }
 `
 
-const mapStateToProps = state => ({
-  device: state.reducer.device,
-})
-
-export default connect(mapStateToProps)(Verkin)
+export default Verkin

@@ -4,7 +4,7 @@ import { BoxLogo, GoHome } from "./Styled"
 const Header = () => {
   return (
     <>
-      <GoHome>
+      <GoHome to={"/"}>
         <BoxLogo></BoxLogo>
       </GoHome>
     </>
