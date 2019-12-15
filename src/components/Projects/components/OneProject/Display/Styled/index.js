@@ -9,7 +9,6 @@ export const ImageContainer = styled.div`
 `
 export const Image = styled(Img)`
   object-fit: contain;
-  height: 100%;
 `
 
 export const VideoContainer = styled.div`
@@ -21,10 +20,10 @@ export const VideoContainer = styled.div`
   top: 0;
 `
 export const Video = styled.video`
-  height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 `
 export const Gif = styled.img`
   width: 100%;
+  object-fit: contain;
 `

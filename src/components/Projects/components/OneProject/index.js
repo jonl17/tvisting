@@ -16,9 +16,13 @@ const OneProject = ({ project }) => {
       </Container>
     )
   } else {
+    let type = "video" // it's a video!
+    if (project.forsidumynd.publicURL.includes(".gif")) {
+      type = "gif" // it's a gif!
+    }
     return (
       <Container>
-        <Display project={project} type={`video`}></Display>
+        <Display project={project} type={type}></Display>
         <Info project={project}></Info>
       </Container>
     )

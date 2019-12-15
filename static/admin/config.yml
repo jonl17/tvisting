@@ -32,6 +32,7 @@ collections:
             "Stefnumótun",
             "Letur",
             "Tökur",
+            "Hreyfigrafík",
           ]
       - { label: "Kúnni", name: "kunni", widget: "string" }
       - {
