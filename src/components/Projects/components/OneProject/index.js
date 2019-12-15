@@ -15,6 +15,13 @@ const OneProject = ({ project }) => {
         <Info project={project}></Info>
       </Container>
     )
+  } else {
+    return (
+      <Container>
+        <Display project={project} type={`video`}></Display>
+        <Info project={project}></Info>
+      </Container>
+    )
   }
 }
 
