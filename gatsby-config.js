@@ -24,6 +24,13 @@ module.exports = {
         path: `${__dirname}/static/myndir`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `verkefni`,
+        path: `${__dirname}/static/content/verkefni`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -38,13 +45,6 @@ module.exports = {
             },
           },
         ],
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `verkefni`,
-        path: `${__dirname}/static/content/verkefni`,
       },
     },
     {

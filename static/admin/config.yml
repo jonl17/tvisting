@@ -36,25 +36,25 @@ collections:
       - { label: "Kúnni", name: "kunni", widget: "string" }
       - {
           label: "Forsíðu mynd",
-          name: "forsidu-mynd",
+          name: "forsidumynd",
           widget: "image",
           required: false,
         }
       - {
           label: "Forsíðu myndband",
-          name: "forsidu-myndband",
+          name: "forsidumyndband",
           widget: "file",
           required: false,
         }
       - {
           label: "Forsíðu gif",
-          name: "forsidu-gif",
+          name: "forsidugif",
           widget: "file",
           required: false,
         }
       - {
           label: "Efsta Mynd",
-          name: "efsta-mynd",
+          name: "efstamynd",
           widget: "image",
           hint: "Þessi mynd birtist efst í stöku verki",
         }
