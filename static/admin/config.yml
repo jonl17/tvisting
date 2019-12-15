@@ -59,13 +59,12 @@ collections:
           hint: "Þessi mynd birtist efst í stöku verki",
         }
       - label: "Myndir & Myndbönd"
-        name: "myndir-og-myndbond"
+        name: "hlutir"
         widget: "list"
         fields:
-          - { label: "Mynd", name: "pic", widget: "image", required: false }
           - {
-              label: "Myndband",
-              name: "video",
+              label: "Mynd/Myndband",
+              name: "hlutur",
               widget: "file",
               required: false,
             }
