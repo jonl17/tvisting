@@ -6,10 +6,16 @@ import TopImage from "./top-image"
 
 const ProjectTemplate = ({
   data: {
-    markdownRemark: { frontmatter },
+    markdownRemark: {
+      frontmatter: { title, lysing, hvad_var_gert, kunni, efstamynd },
+    },
   },
 }) => {
-  return <TopImage></TopImage>
+  return (
+    <>
+      <TopImage mynd={efstamynd}></TopImage>
+    </>
+  )
 }
 
 export const query = graphql`
@@ -21,6 +27,13 @@ export const query = graphql`
         lysing
         hvad_var_gert
         kunni
+        efstamynd {
+          childImageSharp {
+            fluid(maxWidth: 1480, quality: 95) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import { Link } from "gatsby"
 
 export const Container = styled(Link)`
@@ -31,9 +31,13 @@ export const List = styled.ul`
 `
 export const Item = styled.li`
   font-size: 20px;
-  text-transform: none;
   font-weight: normal;
   margin-top: 20%;
   color: white;
   margin: 0;
+  ${props =>
+    props.titill &&
+    css`
+      font-size: 25px;
+    `}
 `

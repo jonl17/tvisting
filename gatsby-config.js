@@ -15,6 +15,10 @@ module.exports = {
       mail: `tvist@tvist.is`,
       phone: `855 7701`,
     },
+    menuitems: [
+      { name: `Verkin`, to: `/verkin` },
+      { name: `Stofan`, to: `/stofan` },
+    ],
   },
   plugins: [
     {
@@ -39,7 +43,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 2000,
             },
           },
         ],

@@ -7,7 +7,9 @@ const Info = ({ project: { kunni, title } }) => {
     <Container to={"/verk/" + slugify(title, { lower: true })}>
       <List>
         <Item>{kunni}</Item>
-        <Item>{title}</Item>
+        <Item titill className="bold upper">
+          {title}
+        </Item>
       </List>
     </Container>
   )
