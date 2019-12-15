@@ -35,28 +35,23 @@ collections:
           ]
       - { label: "Kúnni", name: "kunni", widget: "string" }
       - {
+          label: "Á forsíðu",
+          name: "aforsidu",
+          widget: "boolean",
+          required: false,
+        }
+      - {
           label: "Forsíðu mynd",
           name: "forsidumynd",
-          widget: "image",
-          required: false,
-        }
-      - {
-          label: "Forsíðu myndband",
-          name: "forsidumyndband",
           widget: "file",
           required: false,
-        }
-      - {
-          label: "Forsíðu gif",
-          name: "forsidugif",
-          widget: "file",
-          required: false,
+          hint: "Má vera mynd, gif eða video.",
         }
       - {
           label: "Efsta Mynd",
           name: "efstamynd",
           widget: "image",
-          hint: "Þessi mynd birtist efst í stöku verki",
+          hint: "Þessi mynd birtist efst í stöku verki, verður að vera mynd!",
         }
       - label: "Myndir & Myndbönd"
         name: "hlutir"
