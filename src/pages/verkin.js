@@ -39,9 +39,6 @@ export const query = graphql`
           myndir_og_myndbond {
             mynd
           }
-          forsidu_mynd
-          forsidu_myndband
-          forsidu_gif
         }
       }
     }

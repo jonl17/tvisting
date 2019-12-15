@@ -13,14 +13,14 @@ const Display = ({
     return (
       <VideoContainer>
         <Video autoPlay muted loop>
-          <source type="video/mp4" src={project.forsidu_myndband}></source>
+          <source type="video/mp4" src={project.forsidumyndband}></source>
         </Video>
       </VideoContainer>
     )
   } else if (type === `gif`) {
     return (
       <ImageContainer>
-        <Gif src={project.forsidu_gif}></Gif>
+        <Gif src={project.forsidugif}></Gif>
       </ImageContainer>
     )
   } else {
@@ -28,7 +28,7 @@ const Display = ({
       <ImageContainer>
         {nodes.map((item, index) =>
           item.fluid.originalName ===
-          project.forsidu_mynd.replace("/myndir/", "") ? (
+          project.forsidumynd.replace("/myndir/", "") ? (
             <Image key={index} fluid={item.fluid}></Image>
           ) : (
             ""

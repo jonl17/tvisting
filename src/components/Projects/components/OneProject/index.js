@@ -6,7 +6,7 @@ import Info from "./Info"
 import Display from "./Display"
 
 const OneProject = ({ project }) => {
-  if (project.forsidu_myndband !== null && project.forsidu_myndband !== "") {
+  if (project.forsidumyndband !== null && project.forsidumyndband !== "") {
     // it's video !
     return (
       <Container>
@@ -14,7 +14,7 @@ const OneProject = ({ project }) => {
         <Info project={project}></Info>
       </Container>
     )
-  } else if (project.forsidu_gif !== null && project.forsidu_gif !== "") {
+  } else if (project.forsidugif !== null && project.forsidugif !== "") {
     // it's a gif !
     return (
       <Container>
