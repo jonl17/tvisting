@@ -28,7 +28,7 @@ const Display = ({
       <ImageContainer>
         {nodes.map((item, index) =>
           item.fluid.originalName ===
-          project.forsidu_mynd.replace("/assets/", "") ? (
+          project.forsidu_mynd.replace("/myndir/", "") ? (
             <Image key={index} fluid={item.fluid}></Image>
           ) : (
             ""

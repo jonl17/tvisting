@@ -22,4 +22,3 @@ myndir-og-myndbond:
   - mynd: /assets/Elko_mynd3.jpg
   - mynd: /assets/Elko_mynd4.jpg
 ---
-

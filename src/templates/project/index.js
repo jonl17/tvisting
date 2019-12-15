@@ -1,16 +1,15 @@
 import React from "react"
 import { graphql } from "gatsby"
 
+/** components */
+import TopImage from "./top-image"
+
 const ProjectTemplate = ({
   data: {
     markdownRemark: { frontmatter },
   },
 }) => {
-  return (
-    <div>
-      <p>{frontmatter.title}</p>
-    </div>
-  )
+  return <TopImage></TopImage>
 }
 
 export const query = graphql`

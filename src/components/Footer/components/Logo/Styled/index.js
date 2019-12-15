@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import SVG from "../../../../../../static/assets/Tvist_logo.svg"
+import SVG from "../../../../../../static/myndir/svgs/Tvist_logo.svg"
 import { Link } from "gatsby"
 
 export const Container = styled(Link)`
