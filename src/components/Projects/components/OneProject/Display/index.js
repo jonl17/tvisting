@@ -1,14 +1,7 @@
 import React from "react"
 import { VideoContainer, ImageContainer, Video, Image, Gif } from "./Styled"
-import { graphql, StaticQuery } from "gatsby"
 
-const Display = ({
-  type,
-  project,
-  data: {
-    allImageSharp: { nodes },
-  },
-}) => {
+const Display = ({ type, project }) => {
   if (type === `video`) {
     return (
       <VideoContainer>
@@ -26,40 +19,9 @@ const Display = ({
   } else {
     return (
       <ImageContainer>
-        {nodes.map((item, index) =>
-          item.fluid.originalName ===
-          project.forsidumynd.replace("/myndir/", "") ? (
-            <Image key={index} fluid={item.fluid}></Image>
-          ) : (
-            ""
-          )
-        )}
+        <Image fluid={project.forsidumynd.childImageSharp.fluid}></Image>
       </ImageContainer>
     )
   }
 }
-
-export default props => (
-  <StaticQuery
-    query={graphql`
-      {
-        allImageSharp {
-          nodes {
-            fluid(
-              maxWidth: 600
-              traceSVG: {
-                color: "white"
-                turnPolicy: TURNPOLICY_MINORITY
-                blackOnWhite: false
-              }
-            ) {
-              ...GatsbyImageSharpFluid_tracedSVG
-              originalName
-            }
-          }
-        }
-      }
-    `}
-    render={data => <Display data={data} {...props}></Display>}
-  ></StaticQuery>
-)
+export default Display

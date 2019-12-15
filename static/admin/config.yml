@@ -62,10 +62,10 @@ collections:
         name: "myndir-og-myndbond"
         widget: "list"
         fields:
-          - { label: "Mynd", name: "mynd", widget: "image", required: false }
+          - { label: "Mynd", name: "pic", widget: "image", required: false }
           - {
               label: "Myndband",
-              name: "myndband",
+              name: "video",
               widget: "file",
               required: false,
             }
