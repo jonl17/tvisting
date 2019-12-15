@@ -6,17 +6,17 @@ const Display = ({ type, project }) => {
     return (
       <VideoContainer>
         <Video autoPlay muted loop>
-          <source type="video/mp4" src={project.forsidumyndband}></source>
+          <source type="video/mp4" src={project.forsidumynd.publicURL}></source>
         </Video>
       </VideoContainer>
     )
   } else if (type === `gif`) {
     return (
       <ImageContainer>
-        <Gif src={project.forsidugif}></Gif>
+        <Gif src={project.forsidumynd.publicURL}></Gif>
       </ImageContainer>
     )
-  } else {
+  } else if (type === `image`) {
     return (
       <ImageContainer>
         <Image fluid={project.forsidumynd.childImageSharp.fluid}></Image>
