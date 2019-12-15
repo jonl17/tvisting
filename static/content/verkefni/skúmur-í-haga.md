@@ -7,8 +7,8 @@ hvad-var-gert:
 kunni: Hagar
 forsidumynd: /myndir/fifth.jpg
 efstamynd: /myndir/fourth.jpg
-myndir-og-myndbond:
-  - pic: /myndir/first.jpg
-  - pic: /myndir/third.jpg
+hlutir:
+  - hlutur: /myndir/third.jpg
+  - hlutur: /myndir/fourth.jpg
 ---
 
