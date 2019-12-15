@@ -8,8 +8,7 @@ kunni: Hagar
 forsidumynd: /myndir/fifth.jpg
 efstamynd: /myndir/fourth.jpg
 myndir-og-myndbond:
-  - mynd: /myndir/first.jpg
-  - mynd: /myndir/fifth.jpg
-    myndband: ''
+  - pic: /myndir/first.jpg
+  - pic: /myndir/third.jpg
 ---
 
