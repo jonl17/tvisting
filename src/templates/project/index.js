@@ -17,9 +17,13 @@ const ProjectTemplate = ({
   const device = useSelector(state => state.reducer.device)
   return (
     <>
-      <VerticalTitle device={device} title={title}></VerticalTitle>
+      <VerticalTitle device={device} title={kunni}></VerticalTitle>
       <TopImage mynd={efstamynd}></TopImage>
-      <Content title={title}></Content>
+      <Content
+        hvad_var_gert={hvad_var_gert}
+        about={lysing}
+        title={title}
+      ></Content>
     </>
   )
 }

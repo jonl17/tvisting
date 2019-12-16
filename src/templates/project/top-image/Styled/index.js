@@ -20,4 +20,5 @@ export const MobileContainer = styled(BackgroundImage)`
   height: 100%;
   padding-top: 52.25%;
   background-attachment: initial !important;
+  margin: -20px;
 `

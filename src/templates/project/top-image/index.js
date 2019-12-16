@@ -4,7 +4,7 @@ import { useSelector } from "react-redux"
 
 const TopImage = ({ mynd }) => {
   const device = useSelector(state => state.reducer.device)
-  return device === `browser` ? (
+  return device === `browser` || device === `tablet` ? (
     <ImageContainer fluid={mynd.childImageSharp.fluid}></ImageContainer>
   ) : (
     <MobileContainer fluid={mynd.childImageSharp.fluid}></MobileContainer>
