@@ -42,7 +42,7 @@ export const query = graphql`
         kunni
         efstamynd {
           childImageSharp {
-            fluid(maxWidth: 1480, quality: 95) {
+            fluid(maxWidth: 1080, quality: 75) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -51,7 +51,7 @@ export const query = graphql`
           hlutur {
             publicURL
             childImageSharp {
-              fluid(maxWidth: 1080, quality: 95) {
+              fluid(maxWidth: 1080, quality: 85) {
                 ...GatsbyImageSharpFluid
               }
             }

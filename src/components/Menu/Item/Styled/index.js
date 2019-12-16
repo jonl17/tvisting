@@ -14,5 +14,6 @@ export const Anchor = styled(Link)`
     props.radio === `radio` &&
     css`
       font-size: 40px;
+      padding-bottom: 75px;
     `}
 `
