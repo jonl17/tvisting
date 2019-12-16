@@ -1,4 +1,4 @@
-import { SET_DEVICE, BURGER_MENU_OPEN } from "./action"
+import { SET_DEVICE, OPEN_BURGER_MENU } from "./action"
 
 const initialState = {
   device: undefined,
@@ -19,7 +19,7 @@ export default (state = initialState, action) => {
         device = `browser`
       }
       return { ...state, device: device }
-    case BURGER_MENU_OPEN:
+    case OPEN_BURGER_MENU:
       return { ...state, burgerMenuOpen: action.boolean }
     default:
       return state

@@ -3,8 +3,8 @@ export const setDevice = width => ({
   type: SET_DEVICE,
   width,
 })
-export const BURGER_MENU_OPEN = "BURGER_MENU_OPEN"
-export const burgerMenuOpen = boolean => ({
-  type: BURGER_MENU_OPEN,
+export const OPEN_BURGER_MENU = "OPEN_BURGER_MENU"
+export const openBurgerMenu = boolean => ({
+  type: OPEN_BURGER_MENU,
   boolean,
 })

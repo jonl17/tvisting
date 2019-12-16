@@ -1,7 +1,7 @@
 import React from "react"
 import { Container, Logo, LogoAnchor } from "./Styled"
 import { useSelector, useDispatch } from "react-redux"
-import { burgerMenuOpen } from "../../state/action"
+import { openBurgerMenu } from "../../state/action"
 import { graphql, StaticQuery } from "gatsby"
 
 /** components */
@@ -18,7 +18,7 @@ const Menu = ({
   const dispatch = useDispatch()
   return (
     <Container open={burgerMenuOpen ? "open" : ""}>
-      <LogoAnchor onClick={() => dispatch(burgerMenuOpen(false))} to={"/"}>
+      <LogoAnchor onClick={() => dispatch(openBurgerMenu(false))} to={"/"}>
         <Logo></Logo>
       </LogoAnchor>
       {menuitems.map((item, index) => (

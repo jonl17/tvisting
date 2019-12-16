@@ -1,13 +1,13 @@
 import React from "react"
 import { Container, Line } from "./Styled"
 import { useSelector, useDispatch } from "react-redux"
-import { burgerMenuOpen } from "../../state/action"
+import { openBurgerMenu } from "../../state/action"
 
 const dispatches = (dispatch, state) => {
   if (state) {
-    dispatch(burgerMenuOpen(false))
+    dispatch(openBurgerMenu(false))
   } else {
-    dispatch(burgerMenuOpen(true))
+    dispatch(openBurgerMenu(true))
   }
 }
 
