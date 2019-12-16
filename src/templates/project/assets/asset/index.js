@@ -36,7 +36,12 @@ class Asset extends React.Component {
       const { publicURL } = asset
       return (
         <ImageContainer mutant={mutant ? "mutant" : ""}>
-          <Video onClick={() => this.paly()} ref={this.videoRef}>
+          <Video
+            controls={false}
+            playsInline
+            onClick={() => this.paly()}
+            ref={this.videoRef}
+          >
             <source src={publicURL}></source>
           </Video>
           <Play
