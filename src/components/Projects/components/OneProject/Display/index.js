@@ -5,7 +5,7 @@ const Display = ({ type, project }) => {
   if (type === `video`) {
     return (
       <VideoContainer>
-        <Video autoPlay muted loop>
+        <Video controls={false} playsInline autoPlay muted loop>
           <source type="video/mp4" src={project.forsidumynd.publicURL}></source>
         </Video>
       </VideoContainer>
