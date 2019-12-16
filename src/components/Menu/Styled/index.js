@@ -1,5 +1,7 @@
 import styled, { css } from "styled-components"
 import { COLORS, LAYERS } from "../../../constants"
+import SVG from "../../../../static/myndir/svgs/Tvist_logo.svg"
+import { Link } from "gatsby"
 
 const ContainerStyle = css`
   position: fixed;
@@ -29,4 +31,13 @@ export const Container = styled.div`
       opacity: 1;
       pointer-events: all;
     `}
+`
+export const LogoAnchor = styled(Link)``
+export const Logo = styled(SVG)`
+  height: 75px;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  box-sizing: border-box;
+  padding: 19px 18px 17px 25px;
 `

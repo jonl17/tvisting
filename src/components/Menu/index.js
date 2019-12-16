@@ -1,6 +1,7 @@
 import React from "react"
-import { Container } from "./Styled"
-import { useSelector } from "react-redux"
+import { Container, Logo, LogoAnchor } from "./Styled"
+import { useSelector, useDispatch } from "react-redux"
+import { burgerMenuOpen } from "../../state/action"
 import { graphql, StaticQuery } from "gatsby"
 
 /** components */
@@ -14,8 +15,12 @@ const Menu = ({
   },
 }) => {
   const burgerMenuOpen = useSelector(state => state.reducer.burgerMenuOpen)
+  const dispatch = useDispatch()
   return (
     <Container open={burgerMenuOpen ? "open" : ""}>
+      <LogoAnchor onClick={() => dispatch(burgerMenuOpen(false))} to={"/"}>
+        <Logo></Logo>
+      </LogoAnchor>
       {menuitems.map((item, index) => (
         <Item key={index} item={item}></Item>
       ))}
