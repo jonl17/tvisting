@@ -1,5 +1,6 @@
 import React from "react"
 import { ImageContainer, Image, Video, Play } from "./Styled"
+import { connect } from "react-redux"
 
 /** video components are always class components! */
 class Asset extends React.Component {
@@ -24,7 +25,7 @@ class Asset extends React.Component {
     }
   }
   render() {
-    const { asset, mutant } = this.props
+    const { asset, mutant, device } = this.props
     if (asset.childImageSharp) {
       const { fluid } = asset.childImageSharp
       return (
@@ -45,7 +46,9 @@ class Asset extends React.Component {
             <source src={publicURL}></source>
           </Video>
           <Play
-            display={this.state.videoOn ? "hide" : "show"}
+            display={
+              this.state.videoOn || device === `mobile` ? "hide" : "show"
+            }
             onClick={() => this.paly()}
           ></Play>
         </ImageContainer>
@@ -54,4 +57,8 @@ class Asset extends React.Component {
   }
 }
 
-export default Asset
+const mapStateToProps = state => ({
+  device: state.reducer.device,
+})
+
+export default connect(mapStateToProps)(Asset)
