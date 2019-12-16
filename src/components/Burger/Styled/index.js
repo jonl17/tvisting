@@ -1,5 +1,5 @@
 import styled, { css, keyframes } from "styled-components"
-import { COLORS } from "../../../constants"
+import { COLORS, LAYERS } from "../../../constants"
 
 const Breathe = keyframes`
   from {
@@ -19,7 +19,7 @@ export const Container = styled.div`
   right: -15px;
   padding: 0 15px;
   display: grid;
-  z-index: 8;
+  z-index: ${LAYERS.burger};
   &&:hover {
     cursor: pointer;
   }
@@ -31,6 +31,7 @@ const LineStyle = css`
   margin-left: auto;
   margin-right: auto;
   animation: ${Breathe} 1.5s ease-in-out 0s infinite alternate;
+  transition: 0.2s ease-in-out;
 `
 export const Line = styled.span`
   ${LineStyle};
@@ -39,7 +40,7 @@ export const Line = styled.span`
     css`
       margin: auto auto 3px auto;
       ${props =>
-        props.ex &&
+        props.form === "ex" &&
         css`
           background: white;
           transform: rotate(225deg);
@@ -52,7 +53,7 @@ export const Line = styled.span`
       margin-bottom: auto;
       margin-top: 2px;
       ${props =>
-        props.ex &&
+        props.form === "ex" &&
         css`
           background: white;
           transform: rotate(-45deg);

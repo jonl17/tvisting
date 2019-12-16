@@ -6,6 +6,7 @@ import { GlobalStyle } from "../components/GlobalStyle"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import Burger from "../components/Burger"
+import Menu from "../components/Menu"
 
 class Wrap extends React.Component {
   render() {
@@ -14,6 +15,7 @@ class Wrap extends React.Component {
         <GlobalStyle></GlobalStyle>
         <Header></Header>
         <Burger></Burger>
+        <Menu></Menu>
         {/** body of the website below */}
         {this.props.children}
         {/** body of the website above */}

@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components"
 import React from "react"
+import { LAYERS } from "../../constants"
 
 const VerticalText = styled.h1`
   position: fixed;
@@ -11,7 +12,7 @@ const VerticalText = styled.h1`
   text-align: right;
   width: 400px;
   font-size: 25px;
-  z-index: 2;
+  z-index: ${LAYERS.verticalText};
   text-transform: uppercase;
   transform-origin: 0 0;
   transform: rotate(-90deg);

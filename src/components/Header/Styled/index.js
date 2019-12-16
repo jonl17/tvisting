@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import SVG from "../../../../static/myndir/svgs/Tvist_logo_small.svg"
 import { Link } from "gatsby"
+import { LAYERS } from "../../../constants"
 
 export const GoHome = styled(Link)``
 export const BoxLogo = styled(SVG)`
@@ -9,5 +10,5 @@ export const BoxLogo = styled(SVG)`
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 4;
+  z-index: ${LAYERS.boxLogo};
 `

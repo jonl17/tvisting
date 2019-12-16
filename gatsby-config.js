@@ -18,6 +18,7 @@ module.exports = {
     menuitems: [
       { name: `Verkin`, to: `/verkin` },
       { name: `Stofan`, to: `/stofan` },
+      { name: `Radíó`, to: `/radio` },
     ],
   },
   plugins: [
