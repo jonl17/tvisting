@@ -1,7 +1,6 @@
 import styled, { css } from "styled-components"
 
 export const Container = styled.div`
-  height: 100%;
   box-sizing: border-box;
   min-height: 100vh;
   ${props =>

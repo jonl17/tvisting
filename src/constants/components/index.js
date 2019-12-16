@@ -26,3 +26,9 @@ const VerticalText = styled.h1`
 export const VerticalTitle = ({ title, device }) => (
   <VerticalText device={device}>{title}</VerticalText>
 )
+
+const Text = styled.h1`
+  text-transform: uppercase;
+  font-size: 30px;
+`
+export const Title = ({ title, device }) => <Text device={device}>{title}</Text>

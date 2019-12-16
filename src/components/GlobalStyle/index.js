@@ -21,6 +21,10 @@ export const GlobalStyle = createGlobalStyle`
         font-family: "National Bold Italic";
         src: url(${BoldItalic});
     }
+    ::selection {
+        background: rgb(230, 80, 100);
+        color: white;
+    }
     * {
         font-family: "National Book"
     }
