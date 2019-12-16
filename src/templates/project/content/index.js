@@ -14,6 +14,7 @@ const Content = ({ title, about, hvad_var_gert }) => {
       <Title title={title}></Title>
       <About about={about}></About>
       <Hlutverk device={device} hvad_var_gert={hvad_var_gert}></Hlutverk>
+      {/* images, gifs or video assets */}
     </Container>
   )
 }
