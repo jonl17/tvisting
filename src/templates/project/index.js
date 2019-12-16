@@ -1,8 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { useSelector } from "react-redux"
 
 /** components */
 import TopImage from "./top-image"
+import { VerticalTitle } from "../../constants/components"
+import Content from "./content"
 
 const ProjectTemplate = ({
   data: {
@@ -11,9 +14,12 @@ const ProjectTemplate = ({
     },
   },
 }) => {
+  const device = useSelector(state => state.reducer.device)
   return (
     <>
+      <VerticalTitle device={device} title={title}></VerticalTitle>
       <TopImage mynd={efstamynd}></TopImage>
+      <Content title={title}></Content>
     </>
   )
 }

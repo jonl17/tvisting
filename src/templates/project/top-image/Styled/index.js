@@ -1,9 +1,23 @@
-import styled from "styled-components"
-import Img from "gatsby-image"
+import styled, { css } from "styled-components"
+import BackgroundImage from "gatsby-background-image"
 
-export const ImageContainer = styled.div`
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
+const SharedStyle = css`
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
 `
-export const Image = styled(Img)``
+
+export const ImageContainer = styled(BackgroundImage)`
+  ${SharedStyle};
+  height: 100vh;
+  background-attachment: fixed !important;
+  transition: 1s ease-out;
+  /** to counter the page container padding */
+  margin: -75px;
+`
+export const MobileContainer = styled(BackgroundImage)`
+  ${SharedStyle};
+  height: 100%;
+  padding-top: 52.25%;
+  background-attachment: initial !important;
+`
