@@ -1,7 +1,13 @@
 import styled, { css } from "styled-components"
 import { Link } from "gatsby"
 
-export const Container = styled.div``
+export const Container = styled.div`
+  ${props =>
+    props.radio === `radio` &&
+    css`
+      padding-bottom: 75px;
+    `}
+`
 export const Anchor = styled(Link)`
   text-decoration: none;
   color: white;
@@ -14,6 +20,5 @@ export const Anchor = styled(Link)`
     props.radio === `radio` &&
     css`
       font-size: 40px;
-      padding-bottom: 75px;
     `}
 `

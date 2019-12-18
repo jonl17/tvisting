@@ -51,7 +51,7 @@ export const query = graphql`
           hlutur {
             publicURL
             childImageSharp {
-              fluid(maxWidth: 1080, quality: 85) {
+              fluid(maxWidth: 1280, quality: 80) {
                 ...GatsbyImageSharpFluid
               }
             }

@@ -26,7 +26,7 @@ export const query = graphql`
           forsidumynd {
             publicURL
             childImageSharp {
-              fluid(quality: 85) {
+              fluid(quality: 80, maxWidth: 1280) {
                 ...GatsbyImageSharpFluid
               }
             }

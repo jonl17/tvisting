@@ -6,7 +6,7 @@ import { openBurgerMenu } from "../../../state/action"
 const Item = ({ item: { name, to } }) => {
   const dispatch = useDispatch()
   return (
-    <Container>
+    <Container radio={name === `Radíó` ? "radio" : ""}>
       {/* closed menu when transitioning to another page */}
       <Anchor
         onClick={() => dispatch(openBurgerMenu(false))}
