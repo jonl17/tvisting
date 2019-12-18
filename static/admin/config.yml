@@ -14,6 +14,13 @@ collections:
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Dagsetning",
+          name: "dagsetning",
+          widget: "datetime",
+          format: "MM-YYYY",
+          hint: "Verkum er raðað eftir dagsetningu á síðunni, þannig ef þú vilt færa verk framar - breyttu þá dagsetninunni.",
+        }
       - { label: "Lýsing", name: "lysing", widget: "text" }
       - label: "Hvað var gert?"
         name: "hvad-var-gert"
