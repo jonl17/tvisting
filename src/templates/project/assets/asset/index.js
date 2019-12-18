@@ -49,9 +49,7 @@ class Asset extends React.Component {
             <source src={publicURL}></source>
           </Video>
           <Play
-            display={
-              this.state.videoOn || device === `mobile` ? "hide" : "show"
-            }
+            display={this.state.videoOn ? "hide" : "show"}
             onClick={() => this.paly()}
           ></Play>
         </ImageContainer>

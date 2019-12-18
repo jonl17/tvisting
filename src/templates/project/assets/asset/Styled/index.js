@@ -27,7 +27,7 @@ export const Play = styled(SVG)`
   height: 100%;
   width: 100%;
   box-sizing: border-box;
-  padding: 20%;
+  padding: 15%;
   background: transparent;
   &&:hover {
     cursor: pointer;
