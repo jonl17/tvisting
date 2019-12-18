@@ -4,6 +4,7 @@ import React from "react"
 import Carousel from "../components/Carousel"
 
 const index = () => {
+  /** slick carousel in action */
   return <Carousel></Carousel>
 }
 
