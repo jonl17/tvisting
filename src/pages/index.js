@@ -1,12 +1,40 @@
 import React from "react"
-import { Link } from "gatsby"
+import { graphql } from "gatsby"
 
-const index = () => {
-  return (
-    <>
-      <Link to={"/verkin"}>verkin</Link>
-    </>
-  )
+/** components */
+import Carousel from "../components/Carousel"
+
+const index = ({
+  data: {
+    allMarkdownRemark: { nodes },
+  },
+}) => {
+  return <Carousel verkefni={nodes}></Carousel>
 }
+
+export const query = graphql`
+  {
+    allMarkdownRemark(
+      filter: {
+        frontmatter: { aforsidu: { eq: true } }
+        fileAbsolutePath: { regex: "/static/content/verkefni/" }
+      }
+    ) {
+      nodes {
+        frontmatter {
+          title
+          forsidumynd {
+            publicURL
+            childImageSharp {
+              fluid(quality: 85) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`
 
 export default index
