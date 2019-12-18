@@ -4,7 +4,7 @@ export const Container = styled.div`
   height: 100px;
   overflow: hidden;
   width: 100%;
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
   background: rgb(230, 80, 100);
