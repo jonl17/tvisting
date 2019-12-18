@@ -7,6 +7,7 @@ import TopImage from "./top-image"
 import { VerticalTitle } from "../../constants/components"
 import Content from "./content"
 import Assets from "./assets"
+import PageContainer from "../../components/PageContainer"
 
 const ProjectTemplate = ({
   data: {
@@ -17,7 +18,7 @@ const ProjectTemplate = ({
 }) => {
   const device = useSelector(state => state.reducer.device)
   return (
-    <>
+    <PageContainer>
       <VerticalTitle device={device} title={kunni}></VerticalTitle>
       <TopImage mynd={efstamynd}></TopImage>
       <Content
@@ -27,7 +28,7 @@ const ProjectTemplate = ({
         hlutir={hlutir}
       ></Content>
       <Assets assets={hlutir}></Assets>
-    </>
+    </PageContainer>
   )
 }
 

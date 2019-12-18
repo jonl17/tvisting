@@ -8,3 +8,8 @@ export const openBurgerMenu = boolean => ({
   type: OPEN_BURGER_MENU,
   boolean,
 })
+export const REGISTER_FRONTPAGE_ITEMS = "REGISTER_FRONTPAGE_ITEMS"
+export const registerFrontpageItems = items => ({
+  type: REGISTER_FRONTPAGE_ITEMS,
+  items,
+})

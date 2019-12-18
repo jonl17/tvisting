@@ -1,8 +1,13 @@
-import { SET_DEVICE, OPEN_BURGER_MENU } from "./action"
+import {
+  SET_DEVICE,
+  OPEN_BURGER_MENU,
+  REGISTER_FRONTPAGE_ITEMS,
+} from "./action"
 
 const initialState = {
   device: undefined,
   burgerMenuOpen: false,
+  frontpageItems: undefined,
 }
 
 export default (state = initialState, action) => {
@@ -21,6 +26,8 @@ export default (state = initialState, action) => {
       return { ...state, device: device }
     case OPEN_BURGER_MENU:
       return { ...state, burgerMenuOpen: action.boolean }
+    case REGISTER_FRONTPAGE_ITEMS:
+      return { ...state, frontpageItems: action.items }
     default:
       return state
   }
