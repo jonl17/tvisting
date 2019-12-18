@@ -6,7 +6,7 @@ const Contact = ({ type }) => {
   const { contact, address } = useSiteMetadata()
   return type === `contact` ? (
     <Block>
-      <Mail href={"mailto:" + contact.mail}>
+      <Mail target="_blank" href={"mailto:" + contact.mail}>
         <Item>{contact.mail}</Item>
       </Mail>
       <Item>{contact.phone}</Item>

@@ -11,9 +11,17 @@ export const Container = styled(Link)`
   top: 0;
   padding-top: 56.25%;
   width: 100%;
-  opacity: 0;
+  ${props =>
+    props.device === `browser` &&
+    css`
+      opacity: 0;
+    `}
   &&:hover {
-    opacity: 1;
+    ${props =>
+      props.device === `browser` &&
+      css`
+        opacity: 1;
+      `}
   }
 `
 export const List = styled.ul`

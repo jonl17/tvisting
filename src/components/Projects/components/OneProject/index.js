@@ -6,7 +6,6 @@ import Info from "./Info"
 import Display from "./Display"
 
 const OneProject = ({ project }) => {
-  console.log(project.forsidumynd)
   if (project.forsidumynd.childImageSharp) {
     // it's an image!
     return (
