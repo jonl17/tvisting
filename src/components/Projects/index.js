@@ -35,7 +35,7 @@ export default props => (
               forsidumynd {
                 publicURL
                 childImageSharp {
-                  fluid(quality: 100) {
+                  fluid(quality: 80) {
                     ...GatsbyImageSharpFluid
                   }
                 }

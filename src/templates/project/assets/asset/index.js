@@ -2,6 +2,9 @@ import React from "react"
 import { ImageContainer, Image, Video, Play } from "./Styled"
 import { connect } from "react-redux"
 
+/** temp poster for videos, delete later */
+import Poster from "../../../../../static/myndir/poster.png"
+
 /** video components are always class components! */
 class Asset extends React.Component {
   constructor(props) {
@@ -38,7 +41,7 @@ class Asset extends React.Component {
       return (
         <ImageContainer mutant={mutant ? "mutant" : ""}>
           <Video
-            controls={false}
+            poster={Poster}
             playsInline
             onClick={() => this.paly()}
             ref={this.videoRef}
