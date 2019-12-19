@@ -4,8 +4,8 @@ backend:
 media_folder: "static/myndir"
 public_folder: "myndir"
 
-# Verkefni
 collections:
+  # Verkefni
   - name: "verkefni"
     label: "Verkefni"
     folder: "static/content/verkefni"
@@ -71,3 +71,14 @@ collections:
               widget: "file",
               required: false,
             }
+  # Stofan
+  - name: "stofan"
+    label: "Stofan"
+    folder: static/content/stofan
+    editor:
+      preview: false
+    create: true
+    fields:
+      - { name: "title", label: "Titill", widget: "string" }
+      - { name: "body", label: "Um Tvist", widget: "markdown" }
+      - { name: "efstavideo", label: "Efsta myndband", widget: "file" }
