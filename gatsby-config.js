@@ -7,6 +7,10 @@
 module.exports = {
   siteMetadata: {
     title: `TVIST auglýsingastofa`,
+    about: `Hönnunar- og auglýsingastofan TVIST var sjósett á Grandanum sumarið 2016 eftir að Síminn gaf okkur byr í seglin — og upp frá því hafa fleiri góðir viðskiptavinir slegist í för, líkt og sjá má hér að neðan.`,
+    url: `https://tvist.is/`,
+    favicon: `/myndir/favicon.png`,
+    image: `/myndir/social-share.png`,
     address: {
       address: `Þórunnartún 2`,
       code: `105 Reykjavík`,

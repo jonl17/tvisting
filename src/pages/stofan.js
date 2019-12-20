@@ -3,11 +3,12 @@ import { graphql } from "gatsby"
 
 /** components */
 import PageContainer from "../components/PageContainer"
+import InfoSection from "../components/Stofan/InfoSection"
 
 const Stofan = () => {
   return (
     <PageContainer>
-      {/* info-section */}
+      <InfoSection></InfoSection>
       {/* clients */}
       {/* staff */}
       {/* google maps */}

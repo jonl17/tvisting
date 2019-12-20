@@ -82,3 +82,13 @@ collections:
       - { name: "title", label: "Titill", widget: "string" }
       - { name: "body", label: "Um Tvist", widget: "markdown" }
       - { name: "efstavideo", label: "Efsta myndband", widget: "file" }
+  # Kúnnar
+  - name: "kunnar"
+    label: "Kúnnar"
+    folder: static/content/kunnar
+    editor:
+      preview: false
+    create: true
+    fields:
+      - { name: "title", label: "Nafn", widget: "string" }
+      - { name: "kunnimynd", label: "Mynd", widget: "image" }

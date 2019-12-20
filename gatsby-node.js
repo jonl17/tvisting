@@ -44,6 +44,7 @@ exports.createPages = ({ graphql, actions }) => {
             component: projectTemplate,
             context: {
               id: node.id,
+              name: node.frontmatter.title,
             },
           })
         })
