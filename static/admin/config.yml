@@ -91,4 +91,30 @@ collections:
     create: true
     fields:
       - { name: "title", label: "Nafn", widget: "string" }
-      - { name: "kunnimynd", label: "Mynd", widget: "image" }
+      - { name: "mynd", label: "Mynd", widget: "image" }
+  # Starfsmenn
+  - name: "starfsmenn"
+    label: "Starfsmenn"
+    folder: static/content/starfsmenn
+    editor:
+      preview: false
+    create: true
+    fields:
+      - { name: "title", label: "Nafn", widget: "string" }
+      - { name: "mynd", label: "Mynd", widget: "image" }
+      - label: "Starf"
+        name: "starf"
+        widget: "select"
+        multiple: true
+        options:
+          [
+            "Stofnandi / Creative director",
+            "Stofnandi / Hönnunarstjóri",
+            "Gæðastjóri / Art director",
+            "Grafískur Hönnuður",
+            "Art director",
+            "Hugmynda- og textasmiður",
+            "Verkefnastjóri"
+          ]
+        - { name: "netfang", label: "Netfang", widget: "string" }
+
