@@ -30,10 +30,17 @@ export const VerticalTitle = ({ title, device }) => (
 const Text = styled.h1`
   text-transform: uppercase;
   font-size: 30px;
-  padding-left: ${props => props.padding};
+  margin-left: ${props => props.padding};
+  margin-right: ${props => props.padding};
+  ${props =>
+    props.line === "line" &&
+    css`
+      border-top: 2.5px solid;
+      padding-top: 25px;
+    `}
 `
-export const Title = ({ title, device, padding }) => (
-  <Text padding={padding} device={device}>
+export const Title = ({ title, device, padding, line }) => (
+  <Text line={line ? "line" : ""} padding={padding} device={device}>
     {title}
   </Text>
 )

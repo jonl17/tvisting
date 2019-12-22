@@ -1,5 +1,4 @@
 import React from "react"
-import { graphql } from "gatsby"
 
 /** components */
 import PageContainer from "../components/PageContainer"

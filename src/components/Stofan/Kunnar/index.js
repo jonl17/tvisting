@@ -1,6 +1,7 @@
 import React from "react"
 import { KunnarContainer, KunniBox, Image } from "./Styled"
 import { graphql, StaticQuery } from "gatsby"
+import { useSelector } from "react-redux"
 
 /** components */
 import { Title } from "../../../constants/components"
@@ -10,10 +11,11 @@ const Kunnar = ({
     allMarkdownRemark: { nodes },
   },
 }) => {
+  const device = useSelector(state => state.reducer.device)
   return (
     <>
-      <Title padding={"50px"} title="Viðskiptavinir"></Title>
-      <KunnarContainer>
+      <Title line padding={"50px"} title="Viðskiptavinir"></Title>
+      <KunnarContainer device={device}>
         {nodes.map(item => (
           <KunniBox>
             <Image src={item.frontmatter.mynd.publicURL}></Image>
@@ -35,6 +37,7 @@ export default props => (
             frontmatter {
               title
               mynd {
+                name
                 publicURL
               }
             }
