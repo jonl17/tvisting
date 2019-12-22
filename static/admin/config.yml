@@ -114,7 +114,6 @@ collections:
             "Grafískur Hönnuður",
             "Art director",
             "Hugmynda- og textasmiður",
-            "Verkefnastjóri"
+            "Verkefnastjóri",
           ]
-        - { name: "netfang", label: "Netfang", widget: "string" }
-
+      - { name: "netfang", label: "Netfang", widget: "string" }
