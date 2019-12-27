@@ -4,13 +4,14 @@ import React from "react"
 import PageContainer from "../components/PageContainer"
 import InfoSection from "../components/Stofan/InfoSection"
 import Kunnar from "../components/Stofan/Kunnar"
+import Starfsfolk from "../components/Stofan/Starfsfolk"
 
 const Stofan = () => {
   return (
     <PageContainer>
       <InfoSection></InfoSection>
       <Kunnar></Kunnar>
-      {/* staff */}
+      <Starfsfolk></Starfsfolk>
       {/* google maps */}
     </PageContainer>
   )
