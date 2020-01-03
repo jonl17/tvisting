@@ -16,8 +16,8 @@ const Kunnar = ({
     <>
       <Title line padding={"50px"} title="Viðskiptavinir"></Title>
       <KunnarContainer device={device}>
-        {nodes.map(item => (
-          <KunniBox>
+        {nodes.map((item, index) => (
+          <KunniBox key={index}>
             <Image src={item.frontmatter.mynd.publicURL}></Image>
           </KunniBox>
         ))}
