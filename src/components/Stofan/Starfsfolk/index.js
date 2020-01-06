@@ -10,6 +10,7 @@ import {
   Nafn,
   Info,
   Job,
+  Mail,
 } from "./Styled"
 import { Title } from "../../../constants/components"
 
@@ -19,7 +20,6 @@ const Starfsfolk = ({
   },
 }) => {
   const device = useSelector(state => state.reducer.device)
-  console.log(staff)
   return (
     <>
       <Title line padding={"50px"} title="Starfsfólk"></Title>
@@ -30,6 +30,13 @@ const Starfsfolk = ({
             <Nafn className="bold">{item.frontmatter.title}</Nafn>
             <Info>
               <Job>{item.frontmatter.starf}</Job>
+              <Mail
+                target="_blank"
+                href={"mailto:" + item.frontmatter.netfang}
+                className="bold"
+              >
+                {item.frontmatter.netfang}
+              </Mail>
             </Info>
           </StaffCell>
         ))}

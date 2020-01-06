@@ -4,11 +4,17 @@ import { COLORS } from "../../../../constants"
 export const StarfsfolkContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 33.3333%);
-  /** mobile */
+  /** tablet */
+  ${props =>
+    props.device === `tablet` &&
+    css`
+      grid-template-columns: repeat(2, 50%);
+    `}
+  /** tablet */
   ${props =>
     props.device === `mobile` &&
     css`
-      grid-template-columns: repeat(2, 50%);
+      grid-template-columns: repeat(1, 1fr);
     `}
 `
 export const StaffCell = styled.div`
@@ -21,11 +27,26 @@ export const Image = styled.img`
   height: 100px;
   padding-bottom: 10px;
 `
-export const Nafn = styled.p`
+
+export const Info = styled.div``
+/** shared paragraph styling for info text */
+export const InfoTextStyle = css`
   margin: 0;
   color: ${COLORS.black};
-  font-size: 20px;
   text-transform: uppercase;
 `
-export const Info = styled.div``
-export const Job = styled.p``
+export const Nafn = styled.p`
+  ${InfoTextStyle};
+  font-size: 28px;
+  max-width: 250px;
+  margin: 0 auto;
+`
+export const Job = styled.p`
+  ${InfoTextStyle};
+  font-size: 20px;
+`
+export const Mail = styled.a`
+  ${InfoTextStyle};
+  font-size: 17px;
+  text-decoration: none;
+`
