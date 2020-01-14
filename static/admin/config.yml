@@ -65,20 +65,19 @@ collections:
         name: "hlutir"
         widget: "list"
         fields:
-          - {
-              label: "Mynd/Myndband",
-              name: "hlutur",
-              widget: "list",
-              hint: "Ef þú setur myndband, bættu þá líka við thumbnail mynd!",
-              required: false,
-              fields: 
-                - {
-                    label: Fæll,
-                    name: "faellinn",
-                    widget: "file",
-                    required: false
-                  }
-            }
+          - label: "Mynd/Myndband"
+            name: "hlutur"
+            widget: "object"
+            required: false
+            fields:
+              - { label: "Skrá", name: "skra", widget: "file", required: false }
+              - {
+                  label: "Thumbnail",
+                  name: "thumb",
+                  widget: "image",
+                  required: false,
+                  hint: "Settu thumbnail ef þetta er myndband.",
+                }
   # Stofan
   - name: "stofan"
     label: "Stofan"
