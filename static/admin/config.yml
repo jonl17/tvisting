@@ -68,8 +68,16 @@ collections:
           - {
               label: "Mynd/Myndband",
               name: "hlutur",
-              widget: "file",
+              widget: "list",
+              hint: "Ef þú setur myndband, bættu þá líka við thumbnail mynd!",
               required: false,
+              fields: 
+                - {
+                    label: Fæll,
+                    name: "faellinn",
+                    widget: "file",
+                    required: false
+                  }
             }
   # Stofan
   - name: "stofan"
