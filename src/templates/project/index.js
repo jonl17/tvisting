@@ -41,20 +41,27 @@ export const query = graphql`
         lysing
         hvad_var_gert
         kunni
+        efstamynd {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         hlutir {
           hlutur {
             skra {
               publicURL
               childImageSharp {
                 fluid {
-                  src
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
             thumb {
               childImageSharp {
                 fluid {
-                  src
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

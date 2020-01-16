@@ -29,6 +29,7 @@ class Asset extends React.Component {
   }
   render() {
     const { asset, mutant } = this.props
+    console.log(asset)
     if (asset.childImageSharp) {
       const { fluid } = asset.childImageSharp
       return (
