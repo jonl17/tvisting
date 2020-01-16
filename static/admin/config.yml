@@ -62,11 +62,11 @@ collections:
           hint: "Þessi mynd birtist efst í stöku verki, verður að vera mynd!",
         }
       - label: "Myndir & Myndbönd"
-        name: "hlutir"
+        name: "assettar"
         widget: "list"
         fields:
           - label: "Mynd/Myndband"
-            name: "hlutur"
+            name: "assetti"
             widget: "object"
             required: false
             fields:
