@@ -43,7 +43,7 @@ export const query = graphql`
         kunni
         efstamynd {
           childImageSharp {
-            fluid {
+            fluid(quality: 85) {
               ...GatsbyImageSharpFluid
             }
           }
