@@ -14,7 +14,9 @@ hvad-var-gert:
   - Textavinna
   - Tökur
 kunni: TM
-forsidumynd: /myndir/tm_heilsida-1.jpg
+forsidumynd:
+  skra: /myndir/tm_heilsida-1.jpg
+  thumb: ""
 efstamynd: /myndir/tm_1.jpg
 hlutir:
   - hlutur:
