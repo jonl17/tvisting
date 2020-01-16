@@ -48,11 +48,11 @@ collections:
           widget: "boolean",
           required: false,
         }
-      - label: "Forsíðu mynd",
-        name: "forsidumynd",
-        widget: "object",
-        required: false,
-        hint: "Má vera mynd, gif eða video. Settu thumbnail ef þetta er vidjó!",
+      - label: "Forsíðu mynd"
+        name: "forsidumynd"
+        widget: "object"
+        required: false
+        hint: "Má vera mynd, gif eða video. Settu thumbnail ef þetta er vidjó!"
         fields:
           - { label: "Skrá", name: "skra", widget: "file", required: false }
           - {
