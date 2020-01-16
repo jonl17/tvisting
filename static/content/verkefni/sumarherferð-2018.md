@@ -14,7 +14,8 @@ hvad-var-gert:
   - Samfélagsmiðlun
 kunni: Síminn
 aforsidu: false
-forsidumynd: /myndir/forsida_hendi_xtra_3.jpg
+forsidumynd: 
+  skra: /myndir/forsida_hendi_xtra_3.jpg
 efstamynd: /myndir/parid_topdown_3840x2160.jpg
 hlutir:
   - hlutur:

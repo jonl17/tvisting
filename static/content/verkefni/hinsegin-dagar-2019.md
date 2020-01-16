@@ -14,7 +14,8 @@ hvad-var-gert:
   - Samfélagsmiðlun
 kunni: Strætó
 aforsidu: true
-forsidumynd: /myndir/teikning-detail-mobile.jpg
+forsidumynd: 
+  skra: /myndir/teikning-detail-mobile.jpg
 efstamynd: /myndir/mynd.jpg
 hlutir:
   - hlutur: 

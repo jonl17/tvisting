@@ -9,20 +9,23 @@ const Display = ({ type, project }) => {
     return (
       <VideoContainer>
         <Video poster={Poster} controls={false} playsInline autoPlay muted loop>
-          <source type="video/mp4" src={project.forsidumynd.publicURL}></source>
+          <source
+            type="video/mp4"
+            src={project.forsidumynd.skra.publicURL}
+          ></source>
         </Video>
       </VideoContainer>
     )
   } else if (type === `gif`) {
     return (
       <ImageContainer>
-        <Gif src={project.forsidumynd.publicURL}></Gif>
+        <Gif src={project.forsidumynd.skra.publicURL}></Gif>
       </ImageContainer>
     )
   } else if (type === `image`) {
     return (
       <ImageContainer>
-        <Image fluid={project.forsidumynd.childImageSharp.fluid}></Image>
+        <Image fluid={project.forsidumynd.skra.childImageSharp.fluid}></Image>
       </ImageContainer>
     )
   }

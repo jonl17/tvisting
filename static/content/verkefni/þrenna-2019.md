@@ -12,7 +12,8 @@ hvad-var-gert:
   - Framleiðsla
 kunni: Síminn
 aforsidu: true
-forsidumynd: /myndir/Threnna_Video_3.mp4
+forsidumynd: 
+  skra: /myndir/Threnna_Video_3.mp4
 efstamynd: /myndir/SIM_12345_Staerdir_3840x2160_01.jpg
 hlutir:
   - hlutur: 

@@ -13,7 +13,8 @@ hvad-var-gert:
   - Textavinna
 kunni: Krónan
 aforsidu: true
-forsidumynd: /myndir/Feature_Kronan.gif
+forsidumynd:
+  skra: /myndir/Feature_Kronan.gif
 efstamynd: /myndir/Grilljon_astaedur.jpg
 hlutir:
   - hlutur: 

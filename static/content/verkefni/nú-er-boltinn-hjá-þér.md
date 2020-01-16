@@ -16,7 +16,8 @@ hvad-var-gert:
   - Tökur
 kunni: Síminn
 aforsidu: true
-forsidumynd: /myndir/SIM_Enski_imynd_1.jpg
+forsidumynd: 
+  skra: /myndir/SIM_Enski_imynd_1.jpg
 efstamynd: /myndir/SIM_Enski_imynd_2.jpg
 hlutir:
   - hlutur: 

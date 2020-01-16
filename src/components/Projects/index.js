@@ -33,10 +33,12 @@ export default props => (
               title
               kunni
               forsidumynd {
-                publicURL
-                childImageSharp {
-                  fluid(quality: 80) {
-                    ...GatsbyImageSharpFluid
+                skra {
+                  publicURL
+                  childImageSharp {
+                    fluid(quality: 80) {
+                      ...GatsbyImageSharpFluid
+                    }
                   }
                 }
               }

@@ -64,18 +64,20 @@ class Carousel extends React.Component {
       <CarouselContainer>
         <Slider ref={this.carouselRef} {...settings}>
           {verkefni.map((verk, index) =>
-            verk.frontmatter.forsidumynd.childImageSharp ? (
+            verk.frontmatter.forsidumynd.skra.childImageSharp ? (
               <ImageContainer key={index}>
                 <Anchor to={generateVerkefniSlug(verk.frontmatter.title)}>
                   <Image
-                    fluid={verk.frontmatter.forsidumynd.childImageSharp.fluid}
+                    fluid={
+                      verk.frontmatter.forsidumynd.skra.childImageSharp.fluid
+                    }
                   ></Image>
                 </Anchor>
               </ImageContainer>
-            ) : verk.frontmatter.forsidumynd.publicURL.includes(".gif") ? (
+            ) : verk.frontmatter.forsidumynd.skra.publicURL.includes(".gif") ? (
               <ImageContainer key={index}>
                 <Anchor to={generateVerkefniSlug(verk.frontmatter.title)}>
-                  <Gif src={verk.frontmatter.forsidumynd.publicURL}></Gif>
+                  <Gif src={verk.frontmatter.forsidumynd.skra.publicURL}></Gif>
                 </Anchor>
               </ImageContainer>
             ) : (
@@ -84,7 +86,7 @@ class Carousel extends React.Component {
                   <Video autoPlay muted playsInline loop>
                     <source
                       type="video/mp4"
-                      src={verk.frontmatter.forsidumynd.publicURL}
+                      src={verk.frontmatter.forsidumynd.skra.publicURL}
                     ></source>
                   </Video>
                 </Anchor>
@@ -111,10 +113,12 @@ export default props => (
             frontmatter {
               title
               forsidumynd {
-                publicURL
-                childImageSharp {
-                  fluid(quality: 80, maxWidth: 1280) {
-                    ...GatsbyImageSharpFluid
+                skra {
+                  publicURL
+                  childImageSharp {
+                    fluid(quality: 80, maxWidth: 1280) {
+                      ...GatsbyImageSharpFluid
+                    }
                   }
                 }
               }

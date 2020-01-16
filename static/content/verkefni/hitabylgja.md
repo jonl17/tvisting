@@ -15,7 +15,8 @@ hvad-var-gert:
   - Textavinna
 kunni: Serrano
 aforsidu: true
-forsidumynd: /myndir/A3_Hitabylgja_.jpg
+forsidumynd: 
+  skra: /myndir/A3_Hitabylgja_.jpg
 efstamynd: /myndir/verslun_-1.jpg
 hlutir:
   - hlutur: 

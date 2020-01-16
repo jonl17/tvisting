@@ -13,7 +13,8 @@ hvad-var-gert:
   - Framleiðsla
   - Tökur
 kunni: Síminn
-forsidumynd: /myndir/threnna_urdur_mynd.jpg
+forsidumynd: 
+  skra: /myndir/threnna_urdur_mynd.jpg
 efstamynd: /myndir/threnna_st_1.png
 hlutir:
   - hlutur:

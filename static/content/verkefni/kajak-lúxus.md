@@ -17,7 +17,8 @@ hvad-var-gert:
   - Tökur
 kunni: Síminn
 aforsidu: true
-forsidumynd: /myndir/kajak.mp4
+forsidumynd: 
+  skra: /myndir/kajak.mp4
 efstamynd: /myndir/KajakLuxus_Cover_new_.jpg
 hlutir:
   - hlutur: 

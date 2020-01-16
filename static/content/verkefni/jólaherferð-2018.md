@@ -14,7 +14,8 @@ hvad-var-gert:
   - Textavinna
   - Samfélagsmiðlun
 kunni: Síminn
-forsidumynd: /myndir/forsidumynd_3.jpg
+forsidumynd: 
+  skra: /myndir/forsidumynd_3.jpg
 efstamynd: /myndir/3840x2160_parid_airpods_3.jpg
 hlutir:
   - hlutur:
