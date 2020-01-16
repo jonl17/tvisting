@@ -14,18 +14,20 @@ hvad-var-gert:
   - Textavinna
   - Tökur
 kunni: TM
-forsidumynd: /myndir/tm_heilsida-1.jpg
+forsidumynd:
+  skra: /myndir/tm_heilsida-1.jpg
+  thumb: ""
 efstamynd: /myndir/tm_1.jpg
 hlutir:
   - hlutur:
       skra: /myndir/1_tm_forsida.jpg
-      thumb: ''
+      thumb: ""
   - hlutur:
       skra: /myndir/tm_hamraborgarveggur_vefsida.jpg
-      thumb: ''
+      thumb: ""
   - hlutur:
       skra: /myndir/tm_busstop.jpg
-      thumb: ''
+      thumb: ""
   - hlutur:
       skra: /myndir/tm_nyirtimar_5s_e12.mp4
       thumb: /myndir/tm_thumbnail_1.png
@@ -34,9 +36,8 @@ hlutir:
       thumb: /myndir/tm_thumbnail_2.png
   - hlutur:
       skra: /myndir/tm_simi1.jpg
-      thumb: ''
+      thumb: ""
   - hlutur:
       skra: /myndir/tm_nyirtimarokt2019_42sek.mp4
       thumb: /myndir/tm_thumbnail_3.png
 ---
-

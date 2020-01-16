@@ -13,7 +13,7 @@ hvad-var-gert:
   - Framleiðsla
 kunni: Síminn
 aforsidu: true
-forsidumynd: 
+forsidumynd:
   skra: /myndir/club_dub_spola.mp4
   thumb: ""
 efstamynd: /myndir/1920x1080_logo.jpg
@@ -32,6 +32,5 @@ hlutir:
       thumb: /myndir/club_dub_thumbnail_2.png
   - hlutur:
       skra: /myndir/poster_mockup_dc_02-1-.jpg
-      thumb: ''
+      thumb: ""
 ---
-
