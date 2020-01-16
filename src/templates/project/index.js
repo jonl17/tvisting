@@ -59,11 +59,7 @@ export const query = graphql`
               }
             }
             thumb {
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
-              }
+              publicURL
             }
           }
         }

@@ -2,9 +2,6 @@ import React from "react"
 import { ImageContainer, Image, Video, Play } from "./Styled"
 import { connect } from "react-redux"
 
-/** temp poster for videos, delete later */
-import Poster from "../../../../../static/myndir/poster.png"
-
 /** video components are always class components! */
 class Asset extends React.Component {
   constructor(props) {
@@ -28,26 +25,27 @@ class Asset extends React.Component {
     }
   }
   render() {
-    const { asset, mutant } = this.props
-    console.log(asset)
-    if (asset.childImageSharp) {
-      const { fluid } = asset.childImageSharp
+    const {
+      asset: { skra, thumb },
+      mutant,
+    } = this.props
+    if (skra.childImageSharp) {
+      const { fluid } = skra.childImageSharp
       return (
         <ImageContainer mutant={mutant ? "mutant" : ""}>
           <Image fluid={fluid}></Image>
         </ImageContainer>
       )
     } else {
-      const { publicURL } = asset
       return (
         <ImageContainer mutant={mutant ? "mutant" : ""}>
           <Video
-            poster={Poster}
+            poster={thumb.publicURL}
             playsInline
             onClick={() => this.paly()}
             ref={this.videoRef}
           >
-            <source src={publicURL}></source>
+            <source src={skra.publicURL}></source>
           </Video>
           <Play
             display={this.state.videoOn ? "hide" : "show"}

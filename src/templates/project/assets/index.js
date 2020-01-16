@@ -13,7 +13,7 @@ const Assets = ({ assets }) => {
         <Asset
           mutant={index % 3 === 0 && device !== `mobile`}
           key={index}
-          asset={asset.hlutur.skra}
+          asset={asset.hlutur}
         ></Asset>
       ))}
     </Grid>
