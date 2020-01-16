@@ -30,6 +30,6 @@ hlutir:
       thumb: /myndir/club_dub_thumbnail_2.png
   - hlutur:
       skra: /myndir/poster_mockup_dc_02-1-.jpg
-      thumb: /myndir/club_dub_thummbnail_1.png
+      thumb: ''
 ---
 
