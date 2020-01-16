@@ -49,20 +49,20 @@ collections:
           required: false,
         }
       - label: "Forsíðu mynd",
-          name: "forsidumynd",
-          widget: "object",
-          required: false,
-          hint: "Má vera mynd, gif eða video. Settu thumbnail ef þetta er vidjó!",
-          fields:
-            - { label: "Skrá", name: "skra", widget: "file", required: false }
-            - {
-                label: "Thumbnail",
-                name: "thumb",
-                widget: "image",
-                default: "content/myndir/third.jpg",
-                required: false,
-                hint: "Settu thumbnail ef þetta er myndband.",
-              }
+        name: "forsidumynd",
+        widget: "object",
+        required: false,
+        hint: "Má vera mynd, gif eða video. Settu thumbnail ef þetta er vidjó!",
+        fields:
+          - { label: "Skrá", name: "skra", widget: "file", required: false }
+          - {
+              label: "Thumbnail",
+              name: "thumb",
+              widget: "image",
+              default: "content/myndir/third.jpg",
+              required: false,
+              hint: "Settu thumbnail ef þetta er myndband.",
+            }
       - {
           label: "Efsta Mynd",
           name: "efstamynd",
