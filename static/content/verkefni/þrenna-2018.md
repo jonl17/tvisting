@@ -15,6 +15,7 @@ hvad-var-gert:
 kunni: Síminn
 forsidumynd: 
   skra: /myndir/threnna_urdur_mynd.jpg
+  thumb: ""
 efstamynd: /myndir/threnna_st_1.png
 hlutir:
   - hlutur:

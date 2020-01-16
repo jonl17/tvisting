@@ -19,6 +19,7 @@ kunni: Síminn
 aforsidu: true
 forsidumynd: 
   skra: /myndir/kajak.mp4
+  thumb: ""
 efstamynd: /myndir/KajakLuxus_Cover_new_.jpg
 hlutir:
   - hlutur: 

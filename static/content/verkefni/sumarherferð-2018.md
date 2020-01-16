@@ -16,6 +16,7 @@ kunni: Síminn
 aforsidu: false
 forsidumynd: 
   skra: /myndir/forsida_hendi_xtra_3.jpg
+  thumb: ""
 efstamynd: /myndir/parid_topdown_3840x2160.jpg
 hlutir:
   - hlutur:

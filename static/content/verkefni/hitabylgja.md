@@ -17,6 +17,7 @@ kunni: Serrano
 aforsidu: true
 forsidumynd: 
   skra: /myndir/A3_Hitabylgja_.jpg
+  thumb: ""
 efstamynd: /myndir/verslun_-1.jpg
 hlutir:
   - hlutur: 

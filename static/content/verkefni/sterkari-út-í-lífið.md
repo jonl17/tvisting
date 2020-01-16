@@ -15,7 +15,9 @@ hvad-var-gert:
   - Framleiðsla
   - Vefun
 kunni: Sálfræðingar Höfðabakka
-forsidumynd: /myndir/poster_mockup_radstefna.mp4
+forsidumynd: 
+  skra: /myndir/poster_mockup_radstefna.mp4
+  thumb: ""
 efstamynd: /myndir/sterkari_ut_i_lifid_logo.jpg
 hlutir:
   - hlutur:

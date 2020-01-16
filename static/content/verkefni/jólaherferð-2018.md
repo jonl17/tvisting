@@ -16,6 +16,7 @@ hvad-var-gert:
 kunni: Síminn
 forsidumynd: 
   skra: /myndir/forsidumynd_3.jpg
+  thumb: ""
 efstamynd: /myndir/3840x2160_parid_airpods_3.jpg
 hlutir:
   - hlutur:

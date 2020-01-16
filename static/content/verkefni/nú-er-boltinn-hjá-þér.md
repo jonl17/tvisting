@@ -18,6 +18,7 @@ kunni: Síminn
 aforsidu: true
 forsidumynd: 
   skra: /myndir/SIM_Enski_imynd_1.jpg
+  thumb: ""
 efstamynd: /myndir/SIM_Enski_imynd_2.jpg
 hlutir:
   - hlutur: 

@@ -15,6 +15,7 @@ kunni: Síminn
 aforsidu: true
 forsidumynd: 
   skra: /myndir/club_dub_spola.mp4
+  thumb: ""
 efstamynd: /myndir/1920x1080_logo.jpg
 hlutir:
   - hlutur:

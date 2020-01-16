@@ -14,6 +14,7 @@ kunni: Síminn
 aforsidu: true
 forsidumynd: 
   skra: /myndir/Threnna_Video_3.mp4
+  thumb: ""
 efstamynd: /myndir/SIM_12345_Staerdir_3840x2160_01.jpg
 hlutir:
   - hlutur: 

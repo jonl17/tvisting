@@ -16,6 +16,7 @@ kunni: Strætó
 aforsidu: true
 forsidumynd: 
   skra: /myndir/teikning-detail-mobile.jpg
+  thumb: ""
 efstamynd: /myndir/mynd.jpg
 hlutir:
   - hlutur: 

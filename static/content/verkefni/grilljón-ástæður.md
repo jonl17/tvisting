@@ -15,6 +15,7 @@ kunni: Krónan
 aforsidu: true
 forsidumynd:
   skra: /myndir/Feature_Kronan.gif
+  thumb: ""
 efstamynd: /myndir/Grilljon_astaedur.jpg
 hlutir:
   - hlutur: 
