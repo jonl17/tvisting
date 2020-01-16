@@ -40,7 +40,7 @@ class Asset extends React.Component {
       return (
         <ImageContainer mutant={mutant ? "mutant" : ""}>
           <Video
-            poster={thumb.publicURL}
+            poster={thumb !== null ? thumb.publicURL : ""}
             playsInline
             onClick={() => this.paly()}
             ref={this.videoRef}
