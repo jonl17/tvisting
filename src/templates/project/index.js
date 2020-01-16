@@ -12,7 +12,7 @@ import PageContainer from "../../components/PageContainer"
 const ProjectTemplate = ({
   data: {
     markdownRemark: {
-      frontmatter: { title, lysing, hvad_var_gert, kunni, efstamynd, hlutir },
+      frontmatter: { title, lysing, hvad_var_gert, kunni, efstamynd },
     },
   },
 }) => {
@@ -25,9 +25,9 @@ const ProjectTemplate = ({
         hvad_var_gert={hvad_var_gert}
         about={lysing}
         title={title}
-        hlutir={hlutir}
+        // hlutir={hlutir}
       ></Content>
-      <Assets assets={hlutir}></Assets>
+      {/* <Assets assets={hlutir}></Assets> */}
     </PageContainer>
   )
 }
@@ -45,16 +45,6 @@ export const query = graphql`
           childImageSharp {
             fluid(maxWidth: 1080, quality: 75) {
               ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        hlutir {
-          hlutur {
-            publicURL
-            childImageSharp {
-              fluid(maxWidth: 1280, quality: 80) {
-                ...GatsbyImageSharpFluid
-              }
             }
           }
         }
