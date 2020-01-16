@@ -20,13 +20,21 @@ aforsidu: true
 forsidumynd: /myndir/kajak.mp4
 efstamynd: /myndir/KajakLuxus_Cover_new_.jpg
 hlutir:
-  - hlutur: /myndir/Kajak_iPhone_.mp4
-  - hlutur: /myndir/dagblad_mock_.jpg
-  - hlutur: /myndir/Kajak_AUG_.mp4
-  - hlutur: /myndir/Kajak_SIMI_1_.mp4
-  - hlutur: /myndir/Kajak_KAYAYAYA_.mp4
-  - hlutur: /myndir/Kajak_Heimasida_.mp4
-  - hlutur: /myndir/Kajak_Story_.mp4
-  - hlutur: /myndir/Kajakogluxus.jpg
+  - hlutur: 
+      skra: /myndir/Kajak_iPhone_.mp4
+  - hlutur: 
+      skra: /myndir/dagblad_mock_.jpg
+  - hlutur: 
+      skra: /myndir/Kajak_AUG_.mp4
+  - hlutur: 
+      skra: /myndir/Kajak_SIMI_1_.mp4
+  - hlutur: 
+      skra: /myndir/Kajak_KAYAYAYA_.mp4
+  - hlutur: 
+      skra: /myndir/Kajak_Heimasida_.mp4
+  - hlutur: 
+      skra: /myndir/Kajak_Story_.mp4
+  - hlutur: 
+      skra: /myndir/Kajakogluxus.jpg
 ---
 

@@ -18,8 +18,10 @@ efstamynd: /myndir/1920x1080_logo.jpg
 hlutir:
   - hlutur:
       skra: /myndir/_e6a6961.jpg
+      thumb: /myndir/third.jpg
   - hlutur:
       skra: /myndir/bio_.png
+      thumb: /myndir/third.jpg
   - hlutur:
       skra: /myndir/club_dub_trailer.mp4
       thumb: /myndir/club_dub_thummbnail_1.png
@@ -28,5 +30,6 @@ hlutir:
       thumb: /myndir/club_dub_thumbnail_2.png
   - hlutur:
       skra: /myndir/poster_mockup_dc_02-1-.jpg
+      thumb: /myndir/club_dub_thummbnail_1.png
 ---
 

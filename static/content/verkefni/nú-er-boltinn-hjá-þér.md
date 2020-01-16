@@ -19,8 +19,11 @@ aforsidu: true
 forsidumynd: /myndir/SIM_Enski_imynd_1.jpg
 efstamynd: /myndir/SIM_Enski_imynd_2.jpg
 hlutir:
-  - hlutur: /myndir/SIM_Making_of_Video-1.mp4
-  - hlutur: /myndir/Enski-boltinn-lengri-útgáfa-SUB_1_.mp4
-  - hlutur: /myndir/Siminn_Fotbolti_Afi_62sek_Comp_.mp4
+  - hlutur: 
+      skra: /myndir/SIM_Making_of_Video-1.mp4
+  - hlutur: 
+      skra: /myndir/Enski-boltinn-lengri-útgáfa-SUB_1_.mp4
+  - hlutur:
+      skra: /myndir/Siminn_Fotbolti_Afi_62sek_Comp_.mp4
 ---
 

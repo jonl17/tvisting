@@ -16,11 +16,20 @@ aforsidu: true
 forsidumynd: /myndir/Feature_Kronan.gif
 efstamynd: /myndir/Grilljon_astaedur.jpg
 hlutir:
-  - hlutur: /myndir/Sveppur_iPhone_.mp4
-  - hlutur: /myndir/KronanSumarherferd_Paprikuslattur_Hljod_1_1-1.mp4
-  - hlutur: /myndir/iphone_sol.mp4
-  - hlutur: /myndir/KronanSumarherferd_bananabatur_Hljod.mp4
-  - hlutur: /myndir/KronanSumarherferd_kartoflufugl_Hlod_1.mp4
-  - hlutur: /myndir/KronanSumarherferd_Vardeldur_Hljod_1.mp4
+  - hlutur: 
+      skra: /myndir/Sveppur_iPhone_.mp4
+      thumb: /myndir/third.jpg
+  - hlutur: 
+      skra: /myndir/KronanSumarherferd_Paprikuslattur_Hljod_1_1-1.mp4
+      thumb: /myndir/third.jpg
+  - hlutur: 
+      skra: /myndir/iphone_sol.mp4
+      thumb: /myndir/third.jpg
+  - hlutur: 
+      skra: /myndir/KronanSumarherferd_bananabatur_Hljod.mp4
+  - hlutur:
+      skra: /myndir/KronanSumarherferd_kartoflufugl_Hlod_1.mp4
+  - hlutur: 
+      skra: /myndir/KronanSumarherferd_Vardeldur_Hljod_1.mp4
 ---
 

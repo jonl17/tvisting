@@ -17,11 +17,17 @@ aforsidu: true
 forsidumynd: /myndir/teikning-detail-mobile.jpg
 efstamynd: /myndir/mynd.jpg
 hlutir:
-  - hlutur: /myndir/teikning.jpg
-  - hlutur: /myndir/teikning-detail.jpg
-  - hlutur: /myndir/simar.jpg
-  - hlutur: /myndir/vidbrogd.jpg
-  - hlutur: /myndir/Takk.jpg
-  - hlutur: /myndir/portrets.jpg
+  - hlutur: 
+      skra: /myndir/teikning.jpg
+  - hlutur: 
+      skra: /myndir/teikning-detail.jpg
+  - hlutur: 
+      skra: /myndir/simar.jpg
+  - hlutur: 
+      skra: /myndir/vidbrogd.jpg
+  - hlutur: 
+      skra: /myndir/Takk.jpg
+  - hlutur: 
+      skra: /myndir/portrets.jpg
 ---
 

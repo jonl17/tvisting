@@ -15,9 +15,13 @@ aforsidu: true
 forsidumynd: /myndir/Threnna_Video_3.mp4
 efstamynd: /myndir/SIM_12345_Staerdir_3840x2160_01.jpg
 hlutir:
-  - hlutur: /myndir/SIM_12345_Staerdir_3840x2160_05.jpg
-  - hlutur: /myndir/SIM_12345_Staerdir_3840x2160_02.jpg
-  - hlutur: /myndir/Threnna_Simi.mp4
-  - hlutur: /myndir/Threnna_Video_3.mp4
+  - hlutur: 
+      skra: /myndir/SIM_12345_Staerdir_3840x2160_05.jpg
+  - hlutur: 
+      skra: /myndir/SIM_12345_Staerdir_3840x2160_02.jpg
+  - hlutur: 
+      skra: /myndir/Threnna_Simi.mp4
+  - hlutur: 
+      skra: /myndir/Threnna_Video_3.mp4
 ---
 
