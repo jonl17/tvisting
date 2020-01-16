@@ -43,8 +43,16 @@ export const query = graphql`
         kunni
         efstamynd {
           childImageSharp {
-            fluid(quality: 95) {
-              ...GatsbyImageSharpFluid
+            fluid(
+              quality: 95
+              traceSVG: {
+                color: "lightgray"
+                optTolerance: 0.1
+                turdSize: 150
+                turnPolicy: TURNPOLICY_MINORITY
+              }
+            ) {
+              ...GatsbyImageSharpFluid_tracedSVG
             }
           }
         }

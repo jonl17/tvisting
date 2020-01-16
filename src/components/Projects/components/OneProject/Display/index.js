@@ -8,7 +8,18 @@ const Display = ({ type, project }) => {
   if (type === `video`) {
     return (
       <VideoContainer>
-        <Video poster={Poster} controls={false} playsInline autoPlay muted loop>
+        <Video
+          poster={
+            project.forsidumynd.thumb !== null
+              ? project.forsidumynd.thumb.publicURL
+              : ""
+          }
+          controls={false}
+          playsInline
+          autoPlay
+          muted
+          loop
+        >
           <source
             type="video/mp4"
             src={project.forsidumynd.skra.publicURL}
