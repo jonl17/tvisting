@@ -1,5 +1,6 @@
 ---
 title: Nú er boltinn hjá þér
+dagsetning: 01-2020
 lysing: >-
   Enski boltinn kenndi okkur Íslendingum að elska fótbolta og hefur enn fremur
   límt saman íslenskar fjölskyldur í marga ættliði. Við ölumst upp við að styðja
@@ -16,16 +17,19 @@ hvad-var-gert:
   - Tökur
 kunni: Síminn
 aforsidu: true
-forsidumynd: 
+forsidumynd:
   skra: /myndir/SIM_Enski_imynd_1.jpg
-  thumb: ""
+  thumb: ''
 efstamynd: /myndir/SIM_Enski_imynd_2.jpg
 hlutir:
-  - hlutur: 
-      skra: /myndir/SIM_Making_of_Video-1.mp4
-  - hlutur: 
-      skra: /myndir/Enski-boltinn-lengri-útgáfa-SUB_1_.mp4
   - hlutur:
-      skra: /myndir/Siminn_Fotbolti_Afi_62sek_Comp_.mp4
+      skra: /myndir/sim_making_of_video-1.mp4
+      thumb: /myndir/enski_thumb_1.png
+  - hlutur:
+      skra: /myndir/enski-boltinn-lengri-útgáfa-sub_1_.mp4
+      thumb: /myndir/enski_thumb_2.png
+  - hlutur:
+      skra: /myndir/siminn_fotbolti_afi_62sek_comp_.mp4
+      thumb: /myndir/enski_thumb_3.png
 ---
 
