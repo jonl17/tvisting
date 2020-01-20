@@ -28,5 +28,14 @@ hlutir:
       thumb: /myndir/elko_thumb_1.png
   - hlutur:
       thumb: content/myndir/third.jpg
+  - hlutur:
+      skra: /myndir/elko_sjonvarp_20s.mp4
+      thumb: /myndir/elko_thumb2.png
+  - hlutur:
+      skra: /myndir/elko_mynd3.jpg
+      thumb: ''
+  - hlutur:
+      skra: /myndir/elko_mynd4.jpg
+      thumb: ''
 ---
 
