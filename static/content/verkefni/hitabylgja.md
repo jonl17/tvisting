@@ -1,5 +1,6 @@
 ---
 title: Hitabylgja
+dagsetning: 01-2020
 lysing: >-
   Þegar Serrano kynnti okkur áform sín um tilboðsdaga skunduðum við strax með
   hugmyndina á verkstæðið okkar og reyndum að ramma hana inn af hagleik. Í
@@ -13,22 +14,24 @@ hvad-var-gert:
   - Grafísk Hönnun
   - Hugmyndavinna
   - Textavinna
+  - Hreyfigrafík
 kunni: Serrano
 aforsidu: true
-forsidumynd: 
+forsidumynd:
   skra: /myndir/A3_Hitabylgja_.jpg
-  thumb: ""
+  thumb: ''
 efstamynd: /myndir/verslun_-1.jpg
 hlutir:
-  - hlutur: 
+  - hlutur:
       skra: /myndir/A3_Hitabylgja_.jpg
-  - hlutur: 
+  - hlutur:
       skra: /myndir/A3_Hitabylgja.jpg
-  - hlutur: 
+  - hlutur:
       skra: /myndir/Serrano_Utvarp_Youtube_4.mp4
+      thumb: /myndir/serr_thumb.png
   - hlutur:
       skra: /myndir/SER_Straeto_mockup.jpg
-  - hlutur: 
+  - hlutur:
       skra: /myndir/veifur_1.jpg
 ---
 
