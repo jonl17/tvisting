@@ -15,6 +15,7 @@ hvad-var-gert:
   - Textavinna
   - Tökur
 kunni: Elko
+aforsidu: true
 forsidumynd:
   skra: /myndir/elko_featured-copy.jpg
   thumb: ''
